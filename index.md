@@ -15,7 +15,7 @@ layout: default
 <strong>Biography</strong>
 <ul>
 <li>Joint PhD student PHD (July, 2021 - )<br>
-<span class="tab">- PolarDB & DAMO Academy, Alibaba Group, China</span><br>
+<span class="tab">- Nanyang Technological University, Singapore</span><br>
 <span class="tab">- Supervisor: Siqiang Luo</span>
 </li>
 <li>Research Intern (May, 2019 - May,2020)<br>
