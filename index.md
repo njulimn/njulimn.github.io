@@ -14,7 +14,7 @@ layout: default
 <div style="overflow-y: scroll;">
 <strong>Biography</strong>
 <ul>
-<li>Joint PhD student PHD (July, 2021 - )<br>
+<li>Joint PhD student(July, 2021 - )<br>
 <span class="tab">- Nanyang Technological University, Singapore</span><br>
 <span class="tab">- Supervisor: Siqiang Luo</span>
 </li>
@@ -28,7 +28,6 @@ layout: default
 <span class="tab">- Supervisor: Guihai Chen</span></li>
 <li>BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
 <span class="tab">- Nanjing University</span></li>
-
 </ul>
 </div>
 
