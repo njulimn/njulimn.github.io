@@ -4,8 +4,8 @@ title: Meng Li (李 猛), Ph.D. Candidate, Nanjing University.
 academic_email: menson@smail.nju.edu.cn
 # description: > # this means to ignore newlines until "baseurl:"
   # Give a brief description of yourself, and maybe your passion/interests. It is displayed in search results.
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://njulimn.github.io" # the base hostname & protocol for your site
+baseurl: "https://github.com/njulimn/njulimn.github.io/" # the subpath of your site, e.g. /blog/
+# url: "https://njulimn.github.io" # the base hostname & protocol for your site
 
 # twitter_username: jekyllrb
 github_username: github_username
