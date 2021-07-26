@@ -9,7 +9,7 @@ layout: default
 </style>
 
 <div class="home">
-{% include image.html url="/images/profile.jpeg" caption="Meng Li" width=230 align="left" %}
+{% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=230 align="left" %}
 <!-- <Experience> -->
 <div style="overflow-y: scroll;">
 <strong>Biography</strong>
