@@ -23,11 +23,11 @@ layout: default
 <span class="tab">- Collaborator: Di Wu & Sheng Wang & Feifei Li</span>
 </li>
 <li>PhD in Computer Science and Technology (September, 2016 - )<br>
-<span class="tab">- Department of Computer Science and Technology, Nanjing University, China</span>
+<span class="tab">- Nanjing University, China</span>
 <br>
 <span class="tab">- Supervisor: Guihai Chen</span></li>
 <li>BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
-<span class="tab">- Nanjing University</span></li>
+<span class="tab">- Nanjing University, China</span></li>
 </ul>
 </div>
 
