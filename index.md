@@ -46,8 +46,10 @@ layout: default
 <h2>Updates</h2>
 <div class="updates" style="height:50%; overflow-y: scroll;">
 <ul>
+<li><i>Oct.2021</i> Bamboo Filters: Make Resizing Smooth" is accepted by ICDE2022</li>
+
 <li><i>Oct.2021</i> "ROVEC: Runtime Optimization of Vectorized Expression Evaluation for Column Store" is accepted by TKDE 2021. ROVEC is implemented in <a href="https://mp.weixin.qq.com/s/KkEHqQI3B2B1BY8siae01w">PolarDB IMCI</a></li>
-<li><i>Mar.2021</i> "Hash Adaptive Bloom Filter" is accepted by ICDE.</li>
+<li><i>Mar.2021</i> "Hash Adaptive Bloom Filter" is accepted by ICDE 2021.</li>
 <li><i>Feb.2020</i> Extended version of "Thresholded Monitoring in Distributed Data Streams." is accepted by TNET.</li>
 <li><i>Jan.2020</i> “Finding Persistent Items in Distributed Datasets.” is accepeted by TNET</li>
 <li><i>Nov.2019</i> “Packet-in Request Redirection for Minimizing Control Plane Response Time.” is acccepted by IPDPS</li>
