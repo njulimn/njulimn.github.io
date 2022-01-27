@@ -10,10 +10,8 @@ layout: default
 
 ------
 <div class="home" style="width:100%;margin-top:0.5%;overflow: hidden;">
-    <div style="width:25%;positon:relative;float:left;margin-right:1%;margin-top:1%;">
-        {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=200 %}  
-    </div>
-    <div style="width:65%;positon:relative;float:left;margin:auto;" >
+    {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=230 align="left" %}  
+    <div style="width:70%;positon:relative;float:left;margin:auto;" >
         <div style="width:20%;float:right;" >
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
         </div>
