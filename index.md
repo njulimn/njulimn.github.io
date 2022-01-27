@@ -8,45 +8,57 @@ layout: default
 -->
 </style>
 
-<div class="home">
-{% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=230 align="left" %}
-<!-- <Experience> -->
-<div style="overflow-y: scroll;">
-<strong><h3>Biography</h3></strong>
-<ul>
-<li>Joint PhD student(July, 2021 - )<br>
-<span class="tab">- Nanyang Technological University, Singapore</span><br>
-<span class="tab">- Supervisor: Siqiang Luo</span>
-</li>
-<li>Research Intern (May, 2019 - May,2020)<br>
-<span class="tab">- PolarDB & DAMO Academy, Alibaba Group, China</span><br>
-<span class="tab">- Collaborator: Di Wu & Sheng Wang & Feifei Li</span>
-</li>
-<li>PhD in Computer Science and Technology (September, 2016 - )<br>
-<span class="tab">- Nanjing University, China</span>
-<br>
-<span class="tab">- Supervisor: Guihai Chen</span></li>
-<li>BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
-<span class="tab">- Nanjing University, China</span></li>
-</ul>
+------
+<div class="home" style="width:100%;margin-top:0.5%;overflow: hidden;">
+    <div style="width:25%;positon:relative;float:left;margin-right:1%;margin-top:1%;">
+        {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=200 %}  
+    </div>
+    <div style="width:65%;positon:relative;float:left;margin:auto;" >
+        <div style="width:20%;float:right;" >
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
+        </div>
+        <h3>Biography</h3>
+        <ul >
+            <li>Joint PhD student (July, 2021 - )<br>
+            <span class="tab"> - Nanyang Technological University, Singapore</span><br>
+            <span class="tab"> - Supervisor: Siqiang Luo</span>
+            </li>
+            <li>Research Intern (May, 2019 - May,2020)<br>
+            <span class="tab"> - PolarDB & DAMO Academy, Alibaba Group, China</span><br>
+            <span class="tab"> - Mentor: Di Wu & Sheng Wang & Feifei Li</span>
+            </li>
+            <li>PhD in Computer Science and Technology (September, 2016 - )<br>
+            <span class="tab"> - Nanjing University, China</span>
+            <br>
+            <span class="tab"> - Supervisor: Guihai Chen</span></li>
+            <li>BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
+            <span class="tab"> - Nanjing University, China</span></li>
+        </ul>
+    </div>
 </div>
 
-</div>
 
-----------
-### Research Interests
-<div style="overflow-y: scroll;">
+
+---------
+
+<div style="width:100%;height:50%; overflow-y: scroll;overflow-y: hidden;">
+<h3>Research Interests</h3>
 <ul>
 <li>High Performance Query Processing</li>
 <li>Randomized and Probabilistic Algorithm</li>
 <li>New Database</li>
 </ul>
+<!-- <div style="width=10px;overflow-y: scroll;"> -->
+ <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script> -->
+<!-- </div> -->
 </div>
--------
 
-### Updates
 
-<div class="updates" style="height:50%; overflow-y: scroll;">
+---------
+
+
+<div class="updates" style="width:100%;height:50%; overflow-y: scroll;overflow-y: hidden;">
+<h3> Updates</h3>
 <ul>
 <li><i>Jan.2022</i> "DUET: A Generic Framework for Finding Special Quadratic Elements in Data Streams" is accepted by WWW 2022.</li>
 <li><i>Jan.2021</i> "Seesaw Counting Filter: An Efficient Guardian for Vulnerable Negative Keys During Dynamic Filtering" is accepted by WWW 2022.</li>
