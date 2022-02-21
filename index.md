@@ -1,36 +1,31 @@
 ---
 layout: default
 ---
-<div class="container-fluid">
-<div class="row align-items-start">
-    <div class="col-xs-4" style="margin-left:-5px">
-        <div class="card">
-          <img src="/images/profile.jpeg" class="card-img-top rounded" alt="...">
+
+<div class="home" style="width:100%;margin-top:0.5%;overflow: hidden;">
+    {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=200 align="left" %}  
+    <div style="width:70%;positon:relative;float:left;margin:auto;" >
+        <div style="width:20%;float:right;" >
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
         </div>
-    </div>
-    <div class="col-xs-7" style="margin-left:-10px">
-     <h3 class="display-5">Biography</h3>
-        <ul class="list-group list-group-flush">
-              <li style="font-size:14px">Joint PhD student (July, 2021 - )<br>
-              <span class="tab"> - Nanyang Technological University, Singapore</span><br>
-              <span class="tab"> - Supervisor: Siqiang Luo</span>
-              </li >
-              <li style="font-size:14px">Research Intern (May, 2019 - May,2020)<br>
-              <span > - PolarDB & DAMO Academy, Alibaba Group, China</span><br>
-              <span > - Mentor: Di Wu & Sheng Wang & Feifei Li</span>
-              </li >
-              <li style="font-size:14px">PhD in Computer Science (September, 2016 - )<br>
-              <span class="tab"> - Nanjing University, China</span>
-              <br>
-              <span class="tab"> - Supervisor: Guihai Chen</span></li>
-              <li style="font-size:14px"> BEng in Computer Science(September, 2012 - June, 2016)<br>
-              <span class="tab"> - Nanjing University, China</span></li>
+        <h3>Biography</h3>
+        <ul>
+            <li class="h5">Joint PhD student (July, 2021 - )<br>
+            <span class="tab"> - Nanyang Technological University, Singapore</span><br>
+            <span class="tab"> - Supervisor: Siqiang Luo</span>
+            </li>
+            <li class="h5">Research Intern (May, 2019 - May,2020)<br>
+            <span class="tab"> - PolarDB & DAMO Academy, Alibaba Group, China</span><br>
+            <span class="tab"> - Mentor: Di Wu & Sheng Wang & Feifei Li</span>
+            </li>
+            <li class="h5">PhD in Computer Science and Technology (September, 2016 - )<br>
+            <span class="tab"> - Nanjing University, China</span>
+            <br>
+            <span class="tab"> - Supervisor: Guihai Chen</span></li>
+            <li class="h5">BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
+            <span class="tab"> - Nanjing University, China</span></li>
         </ul>
     </div>
-  <div class="col-sm-auto" style="float:right;width:10%">
-   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
-   </div>
-</div>
 </div>
 
 ---------
