@@ -1,50 +1,46 @@
 ---
 layout: default
 ---
-
-<style type="text/css">
-<!--
- .tab { margin-left: 1%; }
--->
-</style>
-
-------
-<div class="home" style="width:100%;margin-top:0.5%;overflow: hidden;">
-    {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=230 align="left" %}  
-    <div style="width:70%;positon:relative;float:left;margin:auto;" >
-        <div style="width:20%;float:right;" >
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
+<div class="container-fluid">
+<div class="row align-items-start">
+    <div class="col-xs-4" style="margin-left:-5px">
+        <div class="card">
+          <img src="/images/profile.jpeg" class="card-img-top rounded" alt="...">
         </div>
-        <h3>Biography</h3>
-        <ul >
-            <li>Joint PhD student (July, 2021 - )<br>
-            <span class="tab"> - Nanyang Technological University, Singapore</span><br>
-            <span class="tab"> - Supervisor: Siqiang Luo</span>
-            </li>
-            <li>Research Intern (May, 2019 - May,2020)<br>
-            <span class="tab"> - PolarDB & DAMO Academy, Alibaba Group, China</span><br>
-            <span class="tab"> - Mentor: Di Wu & Sheng Wang & Feifei Li</span>
-            </li>
-            <li>PhD in Computer Science and Technology (September, 2016 - )<br>
-            <span class="tab"> - Nanjing University, China</span>
-            <br>
-            <span class="tab"> - Supervisor: Guihai Chen</span></li>
-            <li>BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
-            <span class="tab"> - Nanjing University, China</span></li>
+    </div>
+    <div class="col-xs-7" style="margin-left:-10px">
+     <h3 class="display-5">Biography</h3>
+        <ul class="list-group list-group-flush">
+              <li style="font-size:14px">Joint PhD student (July, 2021 - )<br>
+              <span class="tab"> - Nanyang Technological University, Singapore</span><br>
+              <span class="tab"> - Supervisor: Siqiang Luo</span>
+              </li >
+              <li style="font-size:14px">Research Intern (May, 2019 - May,2020)<br>
+              <span > - PolarDB & DAMO Academy, Alibaba Group, China</span><br>
+              <span > - Mentor: Di Wu & Sheng Wang & Feifei Li</span>
+              </li >
+              <li style="font-size:14px">PhD in Computer Science (September, 2016 - )<br>
+              <span class="tab"> - Nanjing University, China</span>
+              <br>
+              <span class="tab"> - Supervisor: Guihai Chen</span></li>
+              <li style="font-size:14px"> BEng in Computer Science(September, 2012 - June, 2016)<br>
+              <span class="tab"> - Nanjing University, China</span></li>
         </ul>
     </div>
+  <div class="col-sm-auto" style="float:right;width:10%">
+   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
+   </div>
 </div>
-
-
+</div>
 
 ---------
 
 <div style="width:100%;height:50%; overflow-y: scroll;overflow-y: hidden;">
 <h3>Research Interests</h3>
 <ul>
-<li>High Performance Query Processing</li>
-<li>Randomized and Probabilistic Algorithm</li>
-<li>New Database</li>
+<li class="h5">High Performance Query Processing</li>
+<li class="h5">Randomized and Probabilistic Algorithm</li>
+<li class="h5">New Database</li>
 </ul>
 <!-- <div style="width=10px;overflow-y: scroll;"> -->
  <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script> -->
@@ -57,25 +53,25 @@ layout: default
 
 <div class="updates" style="width:100%;height:50%; overflow-y: scroll;overflow-y: hidden;">
 <h3> Updates</h3>
-<ul>
-<li><i>Jan.2022</i> "DUET: A Generic Framework for Finding Special Quadratic Elements in Data Streams" is accepted by WWW 2022.</li>
-<li><i>Jan.2021</i> "Seesaw Counting Filter: An Efficient Guardian for Vulnerable Negative Keys During Dynamic Filtering" is accepted by WWW 2022.</li>
-<li><i>Oct.2021</i> "Bamboo Filters: Make Resizing Smooth" is accepted by ICDE 2022</li>
-<li><i>Oct.2021</i> "ROVEC: Runtime Optimization of Vectorized Expression Evaluation for Column Store" is accepted by TKDE 2021. ROVEC is implemented in <a href="https://mp.weixin.qq.com/s/KkEHqQI3B2B1BY8siae01w">PolarDB IMCI.</a></li>
-<li><i>Mar.2021</i> "Hash Adaptive Bloom Filter" is accepted by ICDE 2021.</li>
-<li><i>Feb.2020</i> Extended version of "Thresholded Monitoring in Distributed Data Streams." is accepted by TNET.</li>
-<li><i>Jan.2020</i> “Finding Persistent Items in Distributed Datasets.” is accepeted by TNET</li>
-<li><i>Nov.2019</i> “Packet-in Request Redirection for Minimizing Control Plane Response Time.” is acccepted by IPDPS</li>
-<li><i>Mar.2019</i> "Thresholded Monitoring in Distributed Data Streams." is accepted by ICDCS.</li>
-<li><i>Dec.2018</i> “Finding Persistent Items in Distributed Datasets.” is accepeted by INFOCOM.</li>
-<li><i>May.2017</i> One paper was accepted by TNET.</li>
-<li><i>Jan.2016</i> One paper was accpeted by SIGMETRICS.</li>
+<ul class="list-group list-group-flush">
+<li class=""><span class="h5">Jan.2022: </span> <a class="h5" herf="">"DUET: A Generic Framework for Finding Special Quadratic Elements in Data Streams" is accepted by WWW 2022.</a></li>
+<li><span class="h5">Jan.2021: </span><a class="h5">"Seesaw Counting Filter: An Efficient Guardian for Vulnerable Negative Keys During Dynamic Filtering" is accepted by WWW 2022.</a></li>
+<li><span class="h5">Oct.2021: </span> <a class="h5">"Bamboo Filters: Make Resizing Smooth" is accepted by ICDE 2022</a></li>
+<li><span class="h5">Oct.2021: </span> <a class="h5">"ROVEC: Runtime Optimization of Vectorized Expression Evaluation for Column Store" is accepted by TKDE 2021. ROVEC is implemented in <a class="h5" href="https://mp.weixin.qq.com/s/KkEHqQI3B2B1BY8siae01w">PolarDB IMCI.</a></a></li>
+<li><span class="h5">Mar.2021: </span> <a class="h5" herf="">"Hash Adaptive Bloom Filter" is accepted by ICDE 2021.</a></li>
+<li><span class="h5">Feb.2020: </span> <a class="h5"> Extended version of "Thresholded Monitoring in Distributed Data Streams." is accepted by TNET.</a></li>
+<li><span class="h5">Jan.2020: </span> <a class="h5">"Finding Persistent Items in Distributed Datasets.” is accepeted by TNET</a></li>
+<li><span class="h5">Nov.2019: </span> <a class="h5">"Packet-in Request Redirection for Minimizing Control Plane Response Time.” is acccepted by IPDPS </a></li>
+<li><span class="h5">Mar.2019: </span> <a class="h5">"Thresholded Monitoring in Distributed Data Streams." is accepted by ICDCS.</a></li>
+<li><span class="h5">Dec.2018: </span> <a class="h5">"Finding Persistent Items in Distributed Datasets.” is accepeted by INFOCOM.</a></li>
+<li><span class="h5">Feb.2017: </span> <a class="h5">One paper was accepted by TNET.</a></li>
+<li><span class="h5">Jan.2016: </span> <a class="h5">One paper was accpeted by SIGMETRICS.</a></li>
 </ul>
 </div>
 
 -------
 
-<h3>Invited Reviewer: <span>WASA-2021, CIKM-2021, ICDE-2021, JSA-2021, WWW-2022</span></h3> 
+<p class="h3">Invited Reviewer: <span class="h5">WASA-2021, CIKM-2021, ICDE-2021, JSA-2021, WWW-2022</span></p>
 
 
 <!-- serve command -->
