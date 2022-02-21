@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+------
 
 <div class="home" style="width:100%;margin-top:0.5%;overflow: hidden;">
-    {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=200 align="left" %}  
+    {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width=220 align="left" %}  
     <div style="width:70%;positon:relative;float:left;margin:auto;" >
         <div style="width:20%;float:right;" >
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
