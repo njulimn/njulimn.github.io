@@ -10,11 +10,9 @@ layout: default
             {% include image.html url="/images/profile.jpeg" caption="Email:menson@smail.nju.edu.cn" width="215" align="left" %}  
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-           <!-- <div class="col-2" style=";float:right;">
-                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
+            <div class="col-2" style="width:20%;float:right;">
+               <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script>
             </div>
-            -->
-            <div> 
                 <span class="h4">&nbsp;&nbsp;Biography</span>
                 <ul>
                     <li class="h5">Joint PhD student (July, 2021 - )<br>
@@ -32,7 +30,6 @@ layout: default
                     <li class="h5">BEng in Computer Science and Technology (September, 2012 - June, 2016)<br>
                     <span class="tab"> - Nanjing University, China</span></li>
                 </ul>
-            </div>
         </div>
     </div>
 </div>
