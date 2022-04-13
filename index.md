@@ -111,7 +111,7 @@ layout: default
       <div class="card-body">
       <ul>
        <li> <b style="font-size:14px;"> Hash Adaptive Bloom Filter</b><br>
-       <span style="font-size:14px;">Rongbiao Xie*, <b>Meng Li*</b>, Zheyu Miao, Rong Gu*, He Huang, Haipeng Dai* and Guihai Chen.</span>
+       <span style="font-size:14px;">Rongbiao Xie*, <b>Meng Li*</b>, Zheyu Miao, Rong Gu, He Huang, Haipeng Dai and Guihai Chen.</span>
        <strong style="font-size:14px;">In Proceedings of the 37th IEEE International Conference on Data Engineering (ICDE), 2021</strong><br>
        <a href=""><div class="color-button" style="font-size:16px;">pdf</div></a><a href="" ><div class="color-button" style="font-size:16px;">cite</div></a><a href=""><div class="color-button" style="font-size:16px;">code</div></a>
        </li>
