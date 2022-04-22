@@ -22,7 +22,7 @@ social: false # includes social icons at the bottom of the page
 - Joint PhD student (July, 2021 - )
   - Supervised by Siqiang Luo, Nanyang Technological University 
 - Research Intern (May, 2019 - May,2020)
-  - Supervised by Di Wu & Sheng Wang & Feifei Li, PolarDB & DAMO Academy, Alibaba, China
+  - PolarDB & DAMO Academy, Alibaba, China
 - PhD in Computer Science and Technology (Sep, 2016 - )
    - Supervised by Guihai Chen, Nanjing University, China
 - BEng in Computer Science and Technology (Sep, 2012 - Jun, 2016)
