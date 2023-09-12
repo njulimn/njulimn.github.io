@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU}{index.html}
+= Meng Li
+
+~~~
+{}{img_left}{fig/meng.png}{alt text}{200px}{}{IMGLINKTARGET}
+
+Assistant Researcher, Nanjing University,
+
+Department of Computer Science and Technology,
+
+163 Xianlin Avenue, Qixia District, Nanjing, Jiangsu 210023, China
+
+Office: CS Building 312
+
+[Email:meng@nju.edu.cn]
+~~~
+
+== Research Interests
+
+- Network telemetru (网络测量)
+  -- Sketch, In-network Measurement
+- Advanced data structures and indexes (概率性数据结构、随机性数据结构、学习型索引)
+  -- Filter, Learned Indexes
+- High Performance Query Processing (高性能查询系统)
+  -- KV Stores, Approximate Query Processing
+
+== News
+~~~
+- 02/2023. Two papers accepted to IEEE ICDM 2023.
+- 09/2023. One paper accepted to VLDB 2023. 
+- 05/2023	I will serve as the program committee for CIKM’23.
+- 02/2023. One paper accepted to IEEE TKDE 2023. 
+- 07/2022	“Bloom Filter with Noisy Coding Framework for Multi-Set Membership Testing” accepted to TKDE 2022.
+- 13/2022 "A Pareto Optimal Bloom Filter Family with Hash Adaptivity” accepted to VLDB Journal 2022.
+- 05/2022	I will serve as the program committee for CIKM’22.
+~~~
