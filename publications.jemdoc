@@ -3,6 +3,10 @@
 
 == 2023
 
+- {{<font color="DarkMagenta">[INFOCOM'24]</font>}} *Meng Li*, Wenqi Luo, Haipeng Dai, Huayi Chai, Rong Gu, Xiaoyu Wang and Guihai Chen. "The Reinforcement Cuckoo Filter". In Proceedings of the 23rd IEEE International Conference on Computer Communications (INFOCOM), Vancouver, Canada, May 20-23, 2024. TBD
+
+- {{<font color="DarkMagenta">[ICDM'23]</font>}} Haipeng Dai, Hancheng Wang, Zhipeng Chen, Jiaqi Zheng, *Meng Li*, Rong Gu, Chen Tian and Wanchun Dou, "Variable-length Encoding Framework: A Generic Framework for Enhancing the Accuracy of Approximate Membership Queries". In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM), Shanghai, China, December 1-4, 2023. TBD
+
 - {{<font color="DarkMagenta">[ICDM'23]</font>}} Zhenghong Luo, Qian Wang, Tianshan Qu, Haomai Wang, *Meng Li*, Rong Gu and Haipeng Dai. "MoonKV: Optimizing Update-intensive Workloads for NVM-based Key-value Stores". In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM), Shanghai, China, December 1-4, 2023. TBD
 
 - {{<font color="DarkMagenta">[VLDB'23]</font>}} Rong Gu, Han Li, Haipeng Dai, Wenjie Huang, Jie Xue, *Meng Li*, Jiaqi Zheng, Haoran Cai, Yihua Huang and Guihai Chen. "ShadowAQP: Efficient Approximate Group-by and Join Query via Attribute-oriented Sample Size Allocation and Data Generation". In Proceedings of the 49rd International Conference on Very Large Data Bases (VLDB), Vancouver, Canada, Aug 28-Sep 1, 2023. TBD
