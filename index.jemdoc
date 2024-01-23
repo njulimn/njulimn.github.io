@@ -20,12 +20,14 @@ Office: CS Building 312
 - Network telemetry (网络测量)
   -- Sketch, In-network Measurement
 - Advanced data structures and indexes (概率性数据结构、随机性数据结构、学习型索引)
-  -- Filter, Learned Indexes
-- High Performance Query Processing (高性能查询系统)
+- Filter, Learned Indexes
   -- KV Stores, Approximate Query Processing
+
 
 == News
 ~~~
+- 12/2023. One paper accepted to IEEE INFOCOM 2024.
+- 11/2023. One paper accepted to 《计算机科学》 2024.
 - 02/2023. Two papers accepted to IEEE ICDM 2023.
 - 09/2023. One paper accepted to VLDB 2023. 
 - 05/2023	I will serve as the program committee for CIKM’23.
@@ -35,4 +37,9 @@ Office: CS Building 312
 - 05/2022	I will serve as the program committee for CIKM’22.
 ~~~
 
+== Links
+
+
+
 {{<script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=KyJLz3SzNyLkW6bhLz6RG5vT0-a_05djc1FAHnJsvc0&w=100"></script>}}
+
