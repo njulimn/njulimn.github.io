@@ -1,6 +1,10 @@
 # jemdoc: menu{MENU}{index.html}
 = Publicaions
 
+
+== 2024
+- {{<font color="DarkMagenta">[TKDE'24]</font>}} Mingxin Li, Hancheng Wang, *Meng Li*, Haipeng Dai, Chengliang Chai, Rong Gu, Feng Chen, Zhiyuan Chen, Shuaituan Li, Qizhi Liu and Guihai Chen. A Survey of Multi-dimensional Indexes: Past and Future Trends. IEEE Transactions on Knowledge and Data Engineering (TKDE, CCF-A), 2024, TBD.
+
 == 2023
 
 - {{<font color="DarkMagenta">[INFOCOM'24]</font>}} *Meng Li*, Wenqi Luo, Haipeng Dai, Huayi Chai, Rong Gu, Xiaoyu Wang and Guihai Chen. "The Reinforcement Cuckoo Filter". In Proceedings of the 23rd IEEE International Conference on Computer Communications (INFOCOM), Vancouver, Canada, May 20-23, 2024. TBD
