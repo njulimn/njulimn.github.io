@@ -16,15 +16,26 @@ Office: CS Building 312
 ~~~
 
 == Research Interests
-
 - Network telemetry (网络测量)
-  -- Sketch, In-network Measurement
+  -- Sketch, eBPF, In-network measurement
 - Advanced data structures and indexes (概率性数据结构、随机性数据结构、学习型索引)
-- Filter, Learned Indexes
-  -- KV Stores, Approximate Query Processing
+  -- Filter, Learned Indexes, Hash Table
+- AI for DB
+  -- Key-value store
+  -- Approximate Query Processing
 
-== News
 ~~~
+== Position Available (招聘)
+ - Data-intensive networked systems Or Mobile LLM (移动大模型)
+ -- Master stutdents
+ -- Remote/Undergraduate research intern
+ -- Benefits: 团队氛围和谐，稳定且充足经费和技术支持, 共同探索前沿课题，广泛国内外学术界和产业界合作
+~~~
+
+== What's new
+~~~
+- 05/2024. VHCF is accepted to Journal of Software 2024.
+- 04/2024. Bamboo filter Journal Version accepted to TON 2024.
 - 03/2024. I will serve as the program committee for CIKM’24.
 - 03/2024. Oasis is accepted to VLDB 2024.
 - 01/2024. Our paper "A Survey of Multi-dimensional Indexes: Past and Future Trends" is accepted to IEEE TKDE 2024.
@@ -39,8 +50,6 @@ Office: CS Building 312
 - 05/2022. I will serve as the program committee for CIKM’22.
 ~~~
 == Links
-
-
 
 {{<script type="text/javascript" id="clstr_globe" src="//cdn.clustrmaps.com/globe.js?d=KyJLz3SzNyLkW6bhLz6RG5vT0-a_05djc1FAHnJsvc0&w=100"></script>}}
 
