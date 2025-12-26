@@ -212,7 +212,7 @@ h1 {
 h2 {
 	padding-top: 0.8em;
 	margin-bottom: 16px;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 h2 + h3 {
@@ -227,7 +227,7 @@ h3 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 1.5;
 	margin-top: 0.0em;
 	margin-bottom: 0.8em;
@@ -270,9 +270,9 @@ div#footer-text {
 }
 
 ul, ol, dl {
-	margin-top: 0.2em;
+	margin-top: 0em;
 	padding-top: 0;
-	margin-bottom: 0.8em;
+	margin-bottom: 0em;
 }
 
 dt {
@@ -332,8 +332,8 @@ p + div.codeblock {
 
 div.codeblock, div.infoblock {
 	margin-right: 0%;
-	margin-top: 1.2em;
-	margin-bottom: 1.3em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
 }
 
 div.blocktitle {
@@ -347,10 +347,10 @@ div.blockcontent {
 }
 
 div.infoblock > div.blockcontent {
-	background: #fffbdd;
-	border: 1px solid #f9c513;
+	background: white;
+	border: 2px solid black;
 	border-radius: 9px;
-	color: #f9c513;
+	color: black;
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
@@ -366,7 +366,7 @@ div.infoblock li p, div.infoblock dd p {
 }
 
 div.infoblock p + p {
-	margin-top: 0.8em;
+	margin-top: 0.4em;
 }
 
 div.codeblock > div.blockcontent {
@@ -636,7 +636,7 @@ div#layout-menu-container .closebtn:hover {
 		padding-left:   20px;
 		padding-right:  20px;
 		padding-top:    16px;
-		padding-bottom: 15px;
+		padding-bottom: 8px;
 	}
 
 	div#img-container {
