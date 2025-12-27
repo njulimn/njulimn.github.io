@@ -1,14 +1,29 @@
-/* Default css file for jemdoc. */
+/* Default css fle for jemdoc. */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-	 			 Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
-				 Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-				 "Segoe UI Symbol";
+font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.02em; /* 紧缩字间距是硬核感的核心 */
+    color: #1a1a1a;
+    background-color: #ffffff;
+/* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	/* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
+	 			 /* Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", */
+				 /* Arial, "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", */
+				 /* "Segoe UI Symbol"; */
+	font-weight: 400;
 	padding: 0;
 	margin: 0;
-}
+} 
 
+/* --- 2. 标题硬核化 --- */
+h1, h2, h3 {
+    font-family: "JetBrains Mono", monospace; /* 标题强制等宽 */
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #000;
+    margin-top: 1.8em;
+}
 
 div#main-container {
 	min-height: 100vh;
@@ -332,18 +347,19 @@ p + div.codeblock {
 
 div.codeblock, div.infoblock {
 	margin-right: 0%;
-	margin-top: 0.4em;
+	margin-top: 0em;
 	margin-bottom: 0.4em;
+	max-width: 660px;
 }
 
 div.blocktitle {
-	color: #0366d6;
-	font-size: 20px;
-	line-height: 2;
+	color: black;
+	font-size: 17px;
+	line-height: 1.2;
 }
 
 div.blockcontent {
-	padding: 10px;
+	padding: 6px;
 }
 
 div.infoblock > div.blockcontent {
@@ -354,7 +370,8 @@ div.infoblock > div.blockcontent {
 }
 
 div.blockcontent p + ul, div.blockcontent p + ol {
-	margin-top: 0.4em;
+	margin-top: 0.2em;
+	margin-left: -10px;
 }
 
 div.infoblock p {
@@ -476,21 +493,22 @@ div#img-container {
 
 div#text-container {
 	overflow: hidden;
-	padding-top: 0px;
+	max-width: 520px;
 }
 
 div#text-container h1{
 	border-bottom: none;
 	margin: 0px;
 	padding: 0px;
-	padding-top: 15px;
+	padding-top: 5px;
 }
+
 
 div#text-container h2{
 	border-bottom: none;
 	margin: 0px;
 	padding: 0px;
-	padding-top: 15px;
+	padding-top: 5px;
 }
 
 div#text-container h3{
@@ -533,8 +551,6 @@ div#main{
 
 .openbtn:hover {
 }
-
-
 
 div#layout-menu-container .closebtn {
 	font-size: 0;
@@ -615,6 +631,7 @@ div#layout-menu-container .closebtn:hover {
 @media screen and (max-width: 700px) {
 	img{
 		margin-right: 0px;
+		margin-top: 20px;
 	}
 
 	p{
@@ -658,13 +675,11 @@ div#layout-menu-container .closebtn:hover {
 	}
 }
 
-
-
-
 /* members */
 div#member-container{
 	text-align: center;
 }
+
 div#member{
 	display: inline-block;
 	vertical-align: top;
@@ -724,3 +739,11 @@ div#member p{
     max-width: 100%;
   }
 }
+
+/* 2. 专门调整 Pinned Notice 框内的列表 */
+.infoblock ul {
+    /* 这里的 padding-left 应该比全局的小一点，
+       因为 .infoblock 本身可能自带了 padding */
+    padding-left: 2.3em; 
+}
+
