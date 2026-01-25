@@ -35,8 +35,7 @@ MathJax.Hub.Config({
 <div id="header-center">
 <a href="index.html" style="text-decoration: none; color: white;">
 <div style="text-align: center; line-height: 1.2;">
-<div style="font-size: 22px; font-weight: bold; color: white;"><span style="font-family: 'Ma Shan Zheng', 'Long Cang', 'ZCOOL KuaiLe', 'STXingkai', 'KaiTi', 'STKaiti', 'FangSong', 'STFangsong', serif;">南京大学先进网络与数据科学研究组</span>（<span style="font-size: 20px; font-weight: bold;">LANDS</span>）</div>
-<div style="font-size: 12px; color: white; margin-top: 2px;">Laboratory for Advanced Networking and Data Science, NanJing University </div>
+<div style="font-size: 22px; font-weight: bold; color: white;"><span style="font-family: 'Ma Shan Zheng', 'Long Cang', 'ZCOOL KuaiLe', 'STXingkai', 'KaiTi', 'STKaiti', 'FangSong', 'STFangsong', serif;">先进网络与数据科学研究组  </span>（LANDS）</div>
 </div>
 </a>
 </div>
@@ -70,7 +69,7 @@ MathJax.Hub.Config({
 <div id="footer-container">
 <div id="footer">
 <div id="footer-text">
-Last edited  on January 25<sup>th</sup> 2026  07:07PM (Time Zone: CST). </br>
+Last edited  on January 25<sup>th</sup> 2026  08:53PM (Time Zone: CST). </br>
 </div> <!-- <div id="footer-text"> -->
 </div> <!-- <div id="footer"> -->
 </div> <!-- <div id="footer-container"> -->
@@ -78,31 +77,55 @@ Last edited  on January 25<sup>th</sup> 2026  07:07PM (Time Zone: CST). </br>
 </div> <!--- <div id="layout"> --->
 </div> <!--- <div id="main-container"> --->
 <script>
+var menuIsOpen = false;
 function openNav() {
     if (window.innerWidth <= 1200) {
         var menu = document.getElementById("layout-menu");
+        var menuContainer = document.getElementById("layout-menu-container");
         var content = document.getElementById("layout-content-container");
-        if (menu.style.width === "0px" || menu.style.width === "") {
-            menu.style.width = "160px";
-            content.style.marginLeft = "160.8px";
-            // 不设置 position: fixed，保持 static 以允许滚动
-            content.style.position = "static";
+        if (!menu || !content) return;
+        if (!menuIsOpen) {
+            menuIsOpen = true;
+            if (menuContainer) { menuContainer.style.width = "160px"; menuContainer.style.maxWidth = "160px"; }
+            menu.style.width = "160px"; menu.style.minWidth = "160px"; menu.style.maxWidth = "160px";
+            content.style.marginLeft = "160.8px"; content.style.width = "calc(100vw - 160.8px)";
         } else {
-            menu.style.width = "0";
-            content.style.position = "static";
-            content.style.marginLeft = "0px";
+            menuIsOpen = false;
+            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
+            menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
+            content.style.marginLeft = "0px"; content.style.width = "100vw";
         }
     }
 }
 function closeNav() {
     if (window.innerWidth <= 1200) {
-        document.getElementById("layout-menu").style.width = "0";
-        document.getElementById("layout-content-container").style.position = "static";
-        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        menuIsOpen = false;
+        var menu = document.getElementById("layout-menu");
+        var menuContainer = document.getElementById("layout-menu-container");
+        var content = document.getElementById("layout-content-container");
+        if (!menu || !content) return;
+        if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
+        menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
+        content.style.marginLeft = "0px"; content.style.width = "100vw";
     }
 }
-// 页面加载时默认打开菜单
-window.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth <= 1200) {
-        openNav();
+(function() {
+    function initMenu() {
+        if (window.innerWidth <= 1200) {
+            menuIsOpen = false;
+            var menu = document.getElementById("layout-menu");
+            var menuContainer = document.getElementById("layout-menu-container");
+            var content = document.getElementById("layout-content-container");
+            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
+            if (menu) { menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0"; }
+            if (content) { content.style.marginLeft = "0px"; content.style.width = "100vw"; }
+        }
     }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMenu);
+    else initMenu();
+    window.addEventListener('load', initMenu);
+    window.addEventListener('pageshow', function(e) { if (e.persisted) initMenu(); });
+})();
+</script>
+</body>
+</html>

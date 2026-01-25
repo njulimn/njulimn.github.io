@@ -68,7 +68,7 @@ div#header {
 	width: 100vw;
 	height: 70px;
 	background: #7B1FA2;
-	z-index: 1;
+	z-index: 100;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
@@ -96,6 +96,12 @@ div#header-center a {
 	color: white;
 }
 
+.header-title {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+
 div#header-center div {
 	text-align: center;
 	line-height: 1.2;
@@ -104,7 +110,7 @@ div#header-center div {
 div#header-right {
 	flex: 0 0 auto;
 	padding-right: 20px;
-	display: none; /* 隐藏右上角导航按钮 */
+	display: flex; /* 显示右上角导航按钮 */
 	align-items: center;
 	height: 70px;
 }
@@ -210,7 +216,7 @@ div#layout-menu {
 	padding-top: 0px;
 	padding-bottom: 25px;
 	height: auto; /* 菜单高度延伸到视口底部减去 header，在 footer 之上 */
-	min-width: 160px;
+	/* min-width: 160px; */ /* 注释掉，允许菜单在移动端完全隐藏 */
 	position: fixed;
 	top: 70px; /* 从 header 下方开始 */
 	bottom: 0; /* 固定到底部 */
@@ -218,6 +224,7 @@ div#layout-menu {
 	overflow-x: hidden;
 	background: #f6f8fa;
 	border-right: 0.8px solid #e1e4e8;
+	z-index: 50; /* 在 header (100) 之下，在内容之上 */
 }
 
 #layout-menu a {
@@ -542,11 +549,11 @@ pre {
 
 div#footer-container{
 	background-color: #7B1FA2;
-	padding-top: 5px;
-	padding-bottom: 15px;
+	padding-top: 3px;
+	padding-bottom: 8px;
 	overflow: visible;
 	margin: 0;
-	line-height: 2;
+	line-height: 1.2;
 	width: 100vw; /* 覆盖整个视口宽度 */
 	position: fixed; /* 固定在视口底部 */
 	bottom: 0; /* 固定在底部 */
@@ -555,13 +562,13 @@ div#footer-container{
 }
 
 div#footer {
-	font-size: small;
+	font-size: 11px;
 	color: #ffffff;
 	min-width: 200px;
 	max-width: 850px;
 	margin: auto;
-	padding-top: 15px;
-	padding-bottom: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	padding-left: calc(160.8px + 35px); /* 保持内容区域对齐 */
 	padding-right: 35px;
 	margin-bottom: 0px;
@@ -579,8 +586,8 @@ div#footer a:hover {
 div#footer-text {
 	line-height: 1;
 	color: #ffffff;
-	font-size: 13px;
-	padding-top: 2px;
+	font-size: 10px;
+	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: center;
 	margin-top: 0px;
@@ -588,7 +595,7 @@ div#footer-text {
 	display: block;
 	visibility: visible;
 	opacity: 1;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 div#footer-text br {
@@ -914,13 +921,18 @@ div#main{
 }
 
 .openbtn {
-  font-size: 0;
+  font-size: 26px;
+  cursor: pointer;
   background: none;
-  color: none;
+  color: white;
+  padding: 8px 9px 8px 9px;
   border: none;
+  width: 45px;
+  display: inline-block; /* 确保按钮始终可见 */
 }
 
 .openbtn:hover {
+  background-color: #2f363d;
 }
 
 div#layout-menu-container .closebtn {
@@ -940,22 +952,34 @@ div#layout-menu-container .closebtn:hover {
 	}
 
 	div#layout-menu-container{
-		width: 160px;
+		width: 0; /* 默认隐藏菜单容器 */
+		overflow: hidden; /* 隐藏溢出内容 */
+		max-width: 0; /* 确保最大宽度也为 0 */
 	}
 
 	div#layout-menu {
 		padding-top: 20px;
 		transition: 0.5s;
-		min-width: 160px;
-		width: 160px;
+		min-width: 0; /* 默认隐藏菜单 */
+		width: 0; /* 默认隐藏菜单 */
+		max-width: 0; /* 确保最大宽度也为 0 */
 		box-shadow: 8px 0px 10px 0 rgba(0, 0, 0, 0.3);
 		border: none;
+		overflow: hidden; /* 隐藏溢出内容 */
 		/*position: fixed;*/
 	}
 	div#layout-content-container {
 		transition: margin-left .5s;
-		margin-left: 160.8px;
-		width: calc(100vw - 160.8px);
+		margin-left: 0; /* 默认菜单隐藏，内容铺满 */
+		width: 100vw; /* 默认菜单隐藏，内容铺满 */
+	}
+
+	div#layout-content {
+		max-width: 100% !important; /* 在小屏幕上移除最大宽度限制 */
+		width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		box-sizing: border-box;
 	}
 	div#main{
 		padding-left: 0;
@@ -986,45 +1010,153 @@ div#layout-menu-container .closebtn:hover {
 
 /* Width to center image */
 @media screen and (max-width: 700px) {
+	/* 减小头部高度以节省空间 - 单行显示 */
+	div#header-container {
+		height: 50px;
+	}
+
+	div#header {
+		height: 50px;
+		flex-wrap: nowrap; /* 不换行，一行显示 */
+		padding: 0;
+		z-index: 100;
+	}
+
+	div#header-left {
+		height: 50px;
+		padding-left: 10px;
+		flex-shrink: 0;
+	}
+
+	div#header-icon-container {
+		height: 40px !important;
+		width: 40px !important;
+	}
+
+	div#header-center {
+		flex: 1;
+		min-width: 0; /* 允许收缩 */
+		overflow: hidden;
+		padding: 0 8px;
+	}
+
+	div#header-center div {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 14px !important;
+		line-height: 50px;
+	}
+
+	div#header-center div div {
+		display: inline;
+		font-size: 14px !important;
+	}
+
+	div#header-right {
+		height: 50px;
+		padding-right: 10px;
+		flex-shrink: 0;
+	}
+
+	.openbtn {
+		font-size: 24px !important;
+		padding: 6px 8px !important;
+		width: 40px !important;
+	}
+}
+
+/* 极小屏幕只保留中文名称 */
+@media screen and (max-width: 400px) {
+	div#header-center div.header-title {
+		font-size: 12px !important;
+	}
+
+	div#header-center .header-en {
+		display: none; /* 隐藏 LANDS 部分 */
+	}
+
+	/* 调整layout的margin-top以匹配新的头部高度 */
+	div#layout {
+		margin-top: 50px;
+	}
+
+	/* 调整菜单top以匹配新的头部高度 */
+	div#layout-menu {
+		top: 50px;
+	}
+
 	img{
 		margin-right: 0px;
-		margin-top: 20px;
+		margin-top: 15px; /* 减小顶部间距 */
 	}
 
 	p{
 		text-align: left;
 	}
 
+	div#layout-content-container {
+		width: 100vw !important; /* 确保容器铺满整个屏幕宽度 */
+		margin-left: 0 !important; /* 移除左边距 */
+	}
+
 	div#layout-content{
 		padding-left:   20px;
 		padding-right:  20px;
-		padding-top:    16px;
-		padding-bottom: 120px !important; /* 增加底部内边距，确保内容不被 footer 遮挡 */
-		min-height: calc(100vh - 190px);
+		padding-top:    12px;
+		padding-bottom: 40px !important; /* 进一步减小底部内边距 */
+		min-height: calc(100vh - 130px); /* 调整最小高度以适应更小的 header 和 footer */
+		max-width: 100% !important; /* 移除最大宽度限制，铺满容器 */
+		width: 100% !important; /* 确保宽度为100% */
+		margin-left: 0 !important; /* 移除自动居中 */
+		margin-right: 0 !important; /* 移除自动居中 */
+		box-sizing: border-box; /* 包含padding在宽度内 */
 	}
 
 	div#footer-container{
-		margin-left: -160.8px; /* 突破父容器限制，向左扩展到视口边缘 */
-		margin-right: -160.8px; /* 突破父容器限制，向右扩展到视口边缘 */
-		width: 100vw; /* 覆盖整个视口宽度 */
+		width: 100vw !important; /* 覆盖整个视口宽度 */
+		margin-left: 0 !important; /* 移除负边距 */
+		margin-right: 0 !important; /* 移除负边距 */
+		left: 0 !important; /* 确保从左边开始 */
+		right: 0 !important; /* 确保到右边结束 */
+	}
+
+	div#footer-container {
+		padding-top: 2px !important;
+		padding-bottom: 4px !important;
+		line-height: 1 !important;
 	}
 
 	div#footer {
-		padding-left:   calc(160.8px + 20px); /* 保持内容区域对齐 */
-		padding-right:  20px;
-		padding-top:    16px;
-		padding-bottom: 0px;
+		max-width: 100% !important; /* 移除最大宽度限制 */
+		width: 100% !important; /* 铺满整个容器 */
+		margin: 0 !important; /* 移除自动居中 */
+		padding-left:   20px !important; /* 移动端使用较小的内边距 */
+		padding-right:  20px !important;
+		padding-top:    2px !important;
+		padding-bottom: 2px !important;
+		box-sizing: border-box; /* 包含padding在宽度内 */
+	}
+
+	div#footer-text {
+		font-size: 9px !important;
+		line-height: 1 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin: 0 !important;
 	}
 
 	div#text-img-container {
 		flex-direction: column;
 		align-items: center;
+		margin-top: 10px; /* 增加顶部间距 */
 	}
 
 	div#img-container {
 		float: none;
 		padding-top: 0px;
 		text-align: center;
+		margin-bottom: 15px; /* 增加头像与文字之间的间距 */
 	}
 
 	div#text-container h1{
@@ -1116,21 +1248,10 @@ div#member p{
 .book-highlight {
 	margin-bottom: 2em;
 	margin-top: 1em;
-	display: block; /* 确保是块级元素 */
-	clear: both; /* 清除浮动 */
-	width: 100%; /* 确保宽度正确 */
-	max-width: 100%; /* 防止超出容器 */
-	position: relative; /* 确保定位正确 */
-	z-index: 1; /* 确保层级正确 */
-	contain: layout style; /* 隔离布局和样式，防止影响后续内容 */
-}
-
-/* 确保 book-highlight 后面的内容不受影响 */
-.book-highlight + h2,
-.book-highlight + ol {
-	position: relative;
-	z-index: 2;
+	display: block;
 	clear: both;
+	width: 100%;
+	max-width: 100%;
 }
 
 .book-container {

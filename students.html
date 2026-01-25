@@ -62,16 +62,49 @@ Last edited  on December 27<sup>th</sup> 2025  01:00AM (Time Zone: CST). </br>
 <script>
 function openNav() {
     if (window.innerWidth <= 1200) {
-        document.getElementById("layout-menu").style.width = "280px";
-        document.getElementById("layout-content-container").style.marginLeft = "280.8px";
-        document.getElementById("layout-content-container").style.position = "fixed";
+        var menu = document.getElementById("layout-menu");
+        var content = document.getElementById("layout-content-container");
+        
+        // 获取计算后的宽度来判断菜单是否可见
+        var computedWidth = window.getComputedStyle(menu).width;
+        var inlineWidth = menu.style.width;
+        
+        // 判断菜单是否隐藏：计算后的宽度接近0，或者内联样式是 "0" 或 "0px"
+        var isHidden = computedWidth === "0px" || 
+                      parseFloat(computedWidth) < 10 || 
+                      inlineWidth === "0" || 
+                      inlineWidth === "0px";
+        
+        if (isHidden) {
+            // 显示菜单
+            menu.style.width = "280px";
+            menu.style.minWidth = "280px";
+            if (content) {
+                content.style.marginLeft = "280.8px";
+                content.style.position = "fixed";
+            }
+        } else {
+            // 隐藏菜单：需要同时设置 width 和 minWidth 来覆盖 CSS 的 min-width
+            menu.style.width = "0";
+            menu.style.minWidth = "0";
+            if (content) {
+                content.style.position = "static";
+                content.style.marginLeft = "0px";
+            }
+        }
     }
 }
 function closeNav() {
     if (window.innerWidth <= 1200) {
-        document.getElementById("layout-menu").style.width = "0";
-        document.getElementById("layout-content-container").style.position = "static";
-        document.getElementById("layout-content-container").style.marginLeft = "0px";
+        var menu = document.getElementById("layout-menu");
+        var content = document.getElementById("layout-content-container");
+        // 隐藏菜单：需要同时设置 width 和 minWidth 来覆盖 CSS 的 min-width
+        menu.style.width = "0";
+        menu.style.minWidth = "0";
+        if (content) {
+            content.style.position = "static";
+            content.style.marginLeft = "0px";
+        }
         setInterval(
             function(){ location.reload() },
             500
