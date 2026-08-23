@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&family=Long+Cang&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--- <title>Publications List</title> --->
+<!--- <title></title> --->
 <title>Homepage of Meng</title>
 <!-- MathJax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
@@ -52,138 +52,155 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="research.html" class="current">Research</a></div>
-<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="publication.html">Publications</a></div>
 <div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
 <div class="menu-item"><a href="teaching.html">Teaching</a></div>
-<div class="menu-item"><a href="https://docs.google.com/document/d/YOUR_DOC_ID">Blog</a></div>
 </div> <!-- <div id="layout-menu"> -->
 </div> <!-- <div id="layout-menu-container"> -->
 <div id="layout-content-container">
 <div id="layout-content">
-<div id="toptitle">
-<h1>Publications List</h1>
+<h1>研究方向：端侧智能研究</h1>
+<style>
+#layout-content h1, #toptitle h1, h1 {
+  font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', 'Songti SC', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+}
+</style>
+<div style="margin: 24px 0 32px 0; font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;">
+
+  <!-- Architecture Flow Container -->
+  <div style="background: #ffffff; border: 1px solid #d1d5db; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);">
+    
+    <!-- Title Header -->
+    <div style="text-align: center; margin-bottom: 22px;">
+      <span style="font-size: 0.95em; font-weight: 700; color: #1f2937; letter-spacing: 1.5px; background: #f3f4f6; padding: 5px 16px; border-radius: 4px; font-family: 'Georgia', 'Times New Roman', serif;">Algorithm–System Co-Design</span>
+      <h3 style="margin: 10px 0 0 0; font-size: 1.3em; font-weight: 700; color: #111827; border-bottom: none; padding-bottom: 0; font-family: 'Georgia', 'Times New Roman', serif;">On-Device Agentic LLM System Framework</h3>
+    </div>
+
+    <!-- Layer I: Foundation Models (TOP) -->
+    <div style="display: flex; align-items: stretch; margin-bottom: 10px;">
+      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #1e3a8a; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">模型层</div>
+      <div style="background: #f5f7ff; border: 1px solid #c7d2fe; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+          <span style="background: #1e3a8a; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer I</span>
+          <span style="font-weight: 700; font-size: 0.95em; color: #1e3a8a; font-family: 'Georgia', 'Times New Roman', serif;">Foundation Model Pre- &amp; Post-Training</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 基模架构与 MoE</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">紧凑基模与稀疏专家路由</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 能力蒸馏与对齐</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">指令遵循与推理链蒸馏</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 持续学习与 SFT</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">免重训持续微调 (<i>VaLoRA</i>)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connector Arrow -->
+    <div style="text-align: center; color: #9ca3af; font-size: 0.85em; margin: -2px 0 6px 0; font-weight: 700;">&#9660; &#9650;</div>
+
+    <!-- Layer II: Agent Harness -->
+    <div style="display: flex; align-items: stretch; margin-bottom: 10px;">
+      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #166534; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">系统层</div>
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+          <span style="background: #166534; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer II</span>
+          <span style="font-weight: 700; font-size: 0.95em; color: #14532d; font-family: 'Georgia', 'Times New Roman', serif;">On-Device Agent Harness</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; Runtime 调度</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">低延迟规划与显存协同</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; 图 RAG &amp; 记忆</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">终身时序记忆 (<i>SmartRAG</i>)</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; 工具 &amp; 扩展</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">云边协同工具调用底座</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connector Arrow -->
+    <div style="text-align: center; color: #9ca3af; font-size: 0.85em; margin: -2px 0 6px 0; font-weight: 700;">&#9660; &#9650;</div>
+
+    <!-- Layer III: Applications (BOTTOM) -->
+    <div style="display: flex; align-items: stretch;">
+      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #581c87; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">应用层</div>
+      <div style="background: #faf5ff; border: 1px solid #e9d5ff; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+          <span style="background: #581c87; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer III</span>
+          <span style="font-weight: 700; font-size: 0.95em; color: #581c87; font-family: 'Georgia', 'Times New Roman', serif;">Domain-Specific Agent Applications</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 情感计算 Agent</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">隐私共情交互 (<i>MobileOC</i>)</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 直播交互 Agent</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">实时流式助播与工具协同</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
+            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 具身智能 Agent</div>
+            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">感知-规划-控制闭环</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
-<div class="book-highlight">
-<div class="book-container">
-<div class="book-cover">
-<a href="https://link.springer.com/book/10.1007/978-981-95-1715-2" target="_blank">
-<img src="./images/book-cover.jpg" alt="Advanced Filter Structure Handbook" onerror="this.src='https://media.springernature.com/w306/springer-static/cover-hires/book/978-981-95-1715-2'">
-</a>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px 0 10px 0; font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;">
+
+  <!-- Column 1: Layer I -->
+  <div>
+    <h3 style="font-size: 0.95em; color: #1e3a8a; border-bottom: 2px solid #c7d2fe; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer I. 基模预训练与后训练</h3>
+    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
+      <li><b>Edge Backbone & MoE</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>SMoE</i>, ISCA'26; APNet'26</span></li>
+      <li><b>Distillation & Alignment</b></li>
+      <li><b>Continual Post-training</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>VaLoRA</i>, EuroSys'25; TMC'26</span></li>
+    </ul>
+  </div>
+
+  <!-- Column 2: Layer II -->
+  <div>
+    <h3 style="font-size: 0.95em; color: #166534; border-bottom: 2px solid #bbf7d0; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer II. 端侧 Agent Harness</h3>
+    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
+      <li><b>Agent Runtime Engine</b></li>
+      <li><b>Native Graph RAG</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>SmartRAG</i>, arXiv'26</span></li>
+      <li><b>Tool Scaling</b><br><span style="color: #6b7280; font-size: 0.9em;">APNet'26</span></li>
+    </ul>
+  </div>
+
+  <!-- Column 3: Layer III -->
+  <div>
+    <h3 style="font-size: 0.95em; color: #581c87; border-bottom: 2px solid #e9d5ff; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer III. 领域智能体应用</h3>
+    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
+      <li><b>Affective Computing</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>MobileOC</i>, UbiComp'26</span></li>
+      <li><b>Live-Streaming Agent</b></li>
+      <li><b>Embodied AI Agent</b></li>
+    </ul>
+  </div>
+
 </div>
-<div class="book-info">
-<h2 style="margin-top: 0; padding-top: 0; border-bottom: none;">📚 New Book</h2>
-<h3 style="margin-top: 0.5em; margin-bottom: 0.5em; border-bottom: none;"><a href="https://link.springer.com/book/10.1007/978-981-95-1715-2" target="_blank" style="color: #7B1FA2; text-decoration: none;">Advanced Filter Structure Handbook: From Design to Optimization</a></h3>
-<p style="margin-bottom: 0.5em;"><strong>Authors:</strong> Haipeng Dai, Meng Li, Guihai Chen</p>
-<p style="margin-bottom: 0.5em;"><strong>Publisher:</strong> Springer Singapore, 2026</p>
-<p style="margin-bottom: 0.5em; text-align: justify;">This book provides a comprehensive guide to understanding and implementing advanced data filters, from traditional Bloom filters to cutting-edge innovations like Ribbon Filter, Bamboo Filter, and SNARF. It systematically explores read-only filters, space-elastic filters, streaming filters, and range filters, offering detailed insights into design principles and implementation methods.</p>
-<p style="margin-bottom: 0;"><a href="https://link.springer.com/book/10.1007/978-981-95-1715-2" target="_blank" style="color: #0366d6; text-decoration: none; font-weight: 500;">🔗 View on Springer →</a></p>
-</div>
-</div>
-</div>
-<h2>2026</h2>
-<ol>
-<li><p><font color="Indigo">[WWW'26]</font> Enze Yu, Penghuan Cheng, Haipeng Dai, Haihan Zhang, Sujin Hou, <b>Meng Li</b>, Zhenzhe Zheng, Qiang He, Guihai Chen. &ldquo;Prototype Augmentation-based Edge-end Heterogeneous Collaborative Learning&rdquo;. In Proceedings of the World Wide Web Conference (WWW, CCF-A), Dubai, United Arab Emirates, April 13-17, 2026. TBD</p>
-</li>
-</ol>
-<h2>2025</h2>
-<ol>
-<li><p><font color="Indigo">[ICPADS'25]</font> Ning Zhang, Suning Chen, Shenghao Liu, Xianjun Deng,Yuanvuan He, Wei Xiang, Meng Li. SecFinder: An IoT Device Identification System Based on Flow-level Traffic in Smart Home. Proceedings of the 31st IEEE International Conference on Parallel and Distributed Systems (ICPADS CCF-C). Hefei, China: IEEE, 2025. \(\color{Crimson}{\text{Best Paper Award}}\) 🏆</p>
-</li>
-<li><p><font color="Indigo">[ICDE'26]</font> Tao Li, Feng Liang, Jinqi Quan, Zihang Yang, Teng Wang, Runhuai Huang, Xiping Hu, <b>Meng Li</b> and Haipeng Dai. &ldquo;Robust Index Benefit Estimation via Hierarchical and Two-dimensional Feature Representation&rdquo;. In Proceedings of IEEE International Conference on Data Engineering (ICDE, CCF-A), Montréal, Canada, May 4-8, 2026.</p>
-</li>
-<li><p><font color="Indigo">[EDBT'26]</font> Junfeng Liu, Jiarui Ye, Mengshi Chen, <b>Meng Li</b>, Siqiang Luo. Evaluating Learned Indexes in LSM-tree Systems: Benchmarks, Insights and Design Choices, International Conference on Extending Database Technology, Tampere, Finland, 24th March -27th March, 2026.</p>
-</li>
-<li><p><font color="Indigo">[TMC'26]</font> Keran Li, Haipeng Dai, Wei Wang, Junlong Chen, Jiliang Wang, Shuai Tong, <b>Meng Li</b>, Lei Wang, Haoran Wang and Guihai Chen. &ldquo;RoLEX: A LoRa-based Rotation Speed Measurement System for Ubiquitous Long-distance Monitoring Applications&rdquo;, IEEE Transactions on Mobile Computing (TMC), 2025. </p>
-</li>
-<li><p><font color="Indigo">[TPDS'26]</font> Hancheng Wang, Haipeng Dai, Shusen Chen, <b>Meng Li</b>, Rong Gu, Youyou Lu, Chengxun Wu, Jiaqi Zheng, Lexi Xu and Guihai Chen. &ldquo;Parallel Wormhole Filters: High-Performance Approximate Membership Query Data Structures for Persistent Memory&rdquo;, IEEE Transactions on Parallel and Distributed Systems (TPDS), 2025. </p>
-</li>
-<li><p><font color="Indigo">[SIGMOD'26]</font> Feifan Liu, Rong Gu, <b>Meng Li</b>, Haipeng Dai, Baohan Wang, Jie Tao, Dian Shen. Hourglass: An Adaptive Range Filter with Lightweight Hybrid Encoding. The 52th ACM SIGMOD/PODS International Conference on Management of Data (SIGMOD, CCF-A), 2026.</p>
-</li>
-<li><p><font color="Indigo">[APWeb'25]</font> Ruiben Zhou, Yihuan Zhou, Shenghao Liu, <b>Meng Li</b>, Xianjun Deng, Haipeng Dai. &ldquo;NALI: NUMA-aware Adaptive Learned Index for In-Memory Multi-core Databases&rdquo;, In Proceedings of the APWeb-WAIM joint International Conference on Web and Big Data, Shenyang (APWeb, CCF-C), May 19-23, 2025.</p>
-</li>
-<li><p><font color="Indigo">[ICDE'25]</font> Guoying Zhu, Haipeng Dai, Kang Yuan, Qian Wang, Lida Chen, Zhenghong Luo, <b>Meng Li</b>, Rong Gu, Xizi Ni, Hua Fan, Dachao Fu, Wenchao Zhou. &ldquo;Local-to-cloud Database Synchronization via Fine-grained Hybrid Compression&rdquo;, In Proceedings of the IEEE International Conference on Data Engineering, Hong Kong (ICDE, CCF-A), May 19-23, 2025.</p>
-</li>
-<li><p><font color="Indigo">[EuroSys'25]</font> Liang Mi, Weijun Wang, Wenming Tu, Qingfeng He, Rui Kong, Xinyu Fang, Yazhu Dong, Yikang Zhang, Yuanchun Li, <b>Meng Li</b>, Haipeng Dai, Guihai Chen, Yunxin Liu. &ldquo;Empower Vision Applications with LoRA LMM&rdquo;. In Proceedings of the 20th ACM European Conference on Computer Systems (EuroSys, CCF-A), Rotterdam, The Netherlands, March 30-April 3, 2025. </p>
-</li>
-<li><p><font color="Indigo">[SIGMOD'25]</font> <b>Meng Li</b>, Huayi Chai, Siqiang Luo, Haipeng Dai, Rong Gu, Jiaqi Zheng and Guihai Chen. &ldquo;VEGA: An Active-tuning Learned Index with Group-Wise Learning Granularity&rdquo;. In Proceedings of the ACM Conference on Management of Data (SIGMOD, CCF-A), Berlin, Germany, June 22-27, 2025. </p>
-</li>
-</ol>
-<h2>2024</h2>
-<ol>
-<li><p><font color="Indigo">[SIGKDD'24]</font> Shizhe Liu, Haipeng Dai, Shaoxu Song, <b>Meng Li</b>, Jingsong Dai, Rong Gu and Guihai Chen. &ldquo;ACER: Accelerating Complex Event Recognition via Two-Phase Filtering under Range Bitmap-Based Indexes&rdquo;. In ACM Knowledge Discovery and Data Mining (SIGKDD,CCF-A), August 25-29, Barcelona, Spain, 2024. TBD</p>
-</li>
-<li><p><font color="Indigo">[JOS'24]</font> <b>Meng Li</b>, Wenqi Luo, Haipeng Dai, Hancheng Wang, Rong Gu, GuiHai Chen. The Cost-sensitive Variable-hash Cuckoo Filter. Journal of Software (中文 CCF-A), 2024, TBD. </p>
-</li>
-<li><p><font color="Indigo">[TON'24]</font> Hancheng Wang, Haipeng Dai, Shusen Chen, <b>Meng Li</b>, Rong Gu, Huayi Chai, Jiaqi Zheng, Zhiyuan Chen, Shuaituan Li, Xianjun Deng, Guihai Chen. Bamboo Filters: Make Resizing Smooth and Adaptive (Journal Version). IEEE/ACM Transactions on Networking (ToN, CCF-A), 2024, TBD.</p>
-</li>
-<li><p><font color="Indigo">[TON'24]</font> Jiaqian Liu, Haipeng Dai, Rui Xia, <b>Meng Li</b>, Ran Ben Bast, Rui Li, Rong Gu, Jiaqi Zheng and Guihai Chen. &ldquo;A Generic Framework for Finding Special Quadratic Elements in Data Streams&rdquo;. IEEE/ACM Transactions on Networking (ToN, CCF-A), 2024. TBD</p>
-</li>
-<li><p><font color="Indigo">[VLDB'24]</font> Guanduo Chen, Zhenying He, <b>Meng Li</b>, Siqiang Luo. Oasis: An Optimal Disjoint Segmented Learned Range Filter.  In Proceedings of the 50th International Conference on Very Large Data Bases (VLDB), Guangzhou, China, Aug 28-Sep 1, 2024. TBD</p>
-</li>
-<li><p><font color="Indigo">[TKDE'24]</font> Mingxin Li, Hancheng Wang, <b>Meng Li</b>, Haipeng Dai, Chengliang Chai, Rong Gu, Feng Chen, Zhiyuan Chen, Shuaituan Li, Qizhi Liu and Guihai Chen. A Survey of Multi-dimensional Indexes: Past and Future Trends. IEEE Transactions on Knowledge and Data Engineering (TKDE, CCF-A), 2024, TBD.</p>
-</li>
-</ol>
-<h2>2023</h2>
-<ol>
-<li><p><font color="Indigo">[INFOCOM'24]</font> <b>Meng Li</b>, Wenqi Luo, Haipeng Dai, Huayi Chai, Rong Gu, Xiaoyu Wang and Guihai Chen. &ldquo;The Reinforcement Cuckoo Filter&rdquo;. In Proceedings of the 23rd IEEE International Conference on Computer Communications (INFOCOM), Vancouver, Canada, May 20-23, 2024. TBD</p>
-</li>
-<li><p><font color="Indigo">[ICDM'23]</font> Haipeng Dai, Hancheng Wang, Zhipeng Chen, Jiaqi Zheng, <b>Meng Li</b>, Rong Gu, Chen Tian and Wanchun Dou, &ldquo;Variable-length Encoding Framework: A Generic Framework for Enhancing the Accuracy of Approximate Membership Queries&rdquo;. In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM), Shanghai, China, December 1-4, 2023. TBD</p>
-</li>
-<li><p><font color="Indigo">[ICDM'23]</font> Zhenghong Luo, Qian Wang, Tianshan Qu, Haomai Wang, <b>Meng Li</b>, Rong Gu and Haipeng Dai. &ldquo;MoonKV: Optimizing Update-intensive Workloads for NVM-based Key-value Stores&rdquo;. In Proceedings of the 23rd IEEE International Conference on Data Mining (ICDM), Shanghai, China, December 1-4, 2023. TBD</p>
-</li>
-<li><p><font color="Indigo">[VLDB'23]</font> Rong Gu, Han Li, Haipeng Dai, Wenjie Huang, Jie Xue, <b>Meng Li</b>, Jiaqi Zheng, Haoran Cai, Yihua Huang and Guihai Chen. &ldquo;ShadowAQP: Efficient Approximate Group-by and Join Query via Attribute-oriented Sample Size Allocation and Data Generation&rdquo;. In Proceedings of the 49rd International Conference on Very Large Data Bases (VLDB), Vancouver, Canada, Aug 28-Sep 1, 2023. TBD</p>
-</li>
-<li><p><font color="Indigo">[TKDE'23]</font> <b>Meng Li</b>, Deyi Chen, Haipeng Dai, Rongbiao Xie, Siqiang Luo, Rong Gu, Tong Yang and Guihai Chen. &ldquo;Seesaw Counting Filter: A Dynamic Filtering Framework for Vulnerable Negative Keys&rdquo;. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2023. TBD</p>
-</li>
-</ol>
-<h2>2022</h2>
-<ol>
-<li><p><font color="Indigo">[ICDE'22]</font> Hancheng Wang, Haipeng Dai, <b>Meng Li</b>, Jun Yu, Rong Gu, Jiaqi Zheng and Guihai Chen. &ldquo;Bamboo Filters: Make Resizing Smooth&rdquo;. In Proceedings of the 38th IEEE International Conference on Data Engineering (ICDE), Virtual Event, May 9-12, 2022. TBD</p>
-</li>
-<li><p><font color="Indigo">[WWW'22]</font> <b>Meng Li</b>, Deyi Chen, Haipeng Dai, Rongbiao Xie, Siqiang Luo, Rong Gu, Tong Yang and Guihai Chen. &ldquo;Seesaw Counting Filter: An Efficient Guardian for Vulnerable Negative Keys During Dynamic Filtering&rdquo;. In Proceedings of the World Wide Web Conference (WWW), Lyon, France, April 25–29, 2022. TBD</p>
-</li>
-<li><p><font color="Indigo">[WWW'22]</font> Jiaqian Liu, Haipeng Dai, Rui Xia, <b>Meng Li</b>, Ran Ben Basat, Rui Li and Guihai Chen. &ldquo;DUET: A Generic Framework for Finding Special Quadratic Elements in Data Streams&rdquo;. In Proceedings of the World Wide Web Conference (WWW), Lyon, France, April 25–29, 2022. TBD</p>
-</li>
-<li><p><font color="Indigo">[TKDE'22]</font> Haipeng Dai, Jun Yu, <b>Meng Li</b>, Wei Wang, Jinghao Ma, Lianyong Qi, Alex X. Liu and Guihai Chen. &ldquo;Bloom Filter with Noisy Coding Framework for Multi-Set Membership Testing&rdquo;. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022. TBD</p>
-</li>
-<li><p><font color="Indigo">[VLDBJ'22]</font> <b>Meng Li</b>, Rongbiao Xie, Deyi Chen, Haipeng Dai, Rong Gu, He Huang, Wanchun Dou and Guihai Chen. &ldquo;A Pareto Optimal Bloom Filter Family with Hash Adaptivity&rdquo;, The VLDB Journal (VLDBJ), 2022. TBD</p>
-</li>
-</ol>
-<h2>2021</h2>
-<ol>
-<li><p><font color="Indigo">[ICDE'21]</font> Rongbiao Xie, <b>Meng Li</b>, Zheyu Miao, Rong Gu, He Huang, Haipeng Dai and Guihai Chen. &ldquo;Hash Adaptive Bloom Filter&rdquo;. In Proceedings of the 37th IEEE International Conference on Data Engineering (ICDE), Virtual Event, April 19-22, 2021. TBD</p>
-</li>
-<li><p><font color="Indigo">[TON'21]</font> Haipeng Dai, Muhammad Shahzad, Alex X. Liu, <b>Meng Li</b> and Yuankun Zhong. &ldquo;Identifying and Estimating Persistent Items in Data Streams&rdquo;. IEEE/ACM Transactions on Networking (TNET), Vol. 26, No. 6, pages 2429-2442, 2018. </p>
-</li>
-<li><p><font color="Indigo">[TKDE'21]</font> <b>Meng Li</b>, Zheyu Miao, Di Wu, Feifei Li, Sheng Wang, Wei Cao, Zhi Qiao, Yubin Ruan, Yukun Liang, Jimmy Yang, Haipeng Dai and Guihai Chen. &ldquo;ROVEC: Runtime Optimization of Vectorized Expression Evaluation for Column Store&rdquo;. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021. TBD</p>
-</li>
-</ol>
-<h2>2020</h2>
-<ol>
-<li><p><font color="Indigo">[TON'20]</font> Haipeng Dai, <b>Meng Li</b>, Alex X. Liu, Jiaqi Zheng and Guihai Chen. &ldquo;Finding Persistent Items in Distributed Datasets&rdquo;. IEEE/ACM Transactions on Networking (TON), Vol. 28, No. 1, 
-pages 1-14, 2020. TBD</p>
-</li>
-<li><p><font color="Indigo">[TON'20]</font> <b>Meng Li</b>, Haipeng Dai, Xiaoyu Wang, Rui Xia, Alex X. Liu and Guihai Chen. &ldquo;Thresholded Monitoring in Distributed Data Streams&rdquo;. IEEE/ACM Transactions on Networking (TON), Vol. 28, No. 3, pages 1033-1046, 2020. TBD</p>
-</li>
-<li><p><font color="Indigo">[IPDPS'20]</font>  Rui Xia, Haipeng Dai, Jiaqi Zheng, Hong Xu, <b>Meng Li</b> and Guihai Chen. &ldquo;Packet-in Request Redirection for Minimizing Control Plane Response Time&rdquo;. In Proceedings of the 34th IEEE International Parallel and Distributed Processing Symposium (IPDPS), New Orleans, USA, May 18-22, 2020. TBD</p>
-</li>
-</ol>
-<h2>Before 2020</h2>
-<ol>
-<li><p><font color="Indigo">[ICDCS‘19]</font> <b>Meng Li</b>, Haipeng Dai, Xiaoyu Wang, Rui Xia, Alex X. Liu and Guihai Chen. &ldquo;Thresholded Monitoring in Distributed Data Streams&rdquo;. In Proceedings of the 39th IEEE International Conference on Distributed Computing (ICDCS), Dallas, Texas, USA, July 7-10, 2019. Acceptance rate: 19.6%. TBD</p>
-</li>
-<li><p><font color="Indigo">[TON'20]</font> Haipeng Dai, Muhammad Shahzad, Alex X. Liu, <b>Meng Li</b> and Yuankun Zhong. &ldquo;Identifying and Estimating Persistent Items in Data Streams&rdquo;. IEEE/ACM Transactions on Networking (TNET), Vol. 26, No. 6, pages 2429-2442, 2018. </p>
-</li>
-<li><p><font color="Indigo">[INFOCOM'18]</font> Haipeng Dai, <b>Meng Li</b> and Alex X. Liu. &ldquo;Finding Persistent Items in Distributed Datasets&rdquo;. In Proceedings of the 37th Annual IEEE International Conference on Computer Communications (INFOCOM), Honolulu, HI, USA, April 15-19, 2018. Acceptance rate: 309/1606 = 19.2%. TBD</p>
-</li>
-<li><p><font color="Indigo">[SIGMETRICS'16]</font> Haipeng Dai, Yuankun Zhong, Alex X. Liu, Wei Wang and <b>Meng Li</b>. &ldquo;Noisy Bloom Filters for Multi-Set Membership Testing&rdquo;. In ACM SIGMETRICS/IFIP Performance (SIGMETRICS), Antibes Juan-Les-Pins, France, June 14-18, 2016. Acceptance rate: 28/208 = 13.46%. </p>
-</li>
-</ol>
+<p>For full papers, see <a href="publication.html" target=&ldquo;blank&rdquo;>Publications</a>. We recruit motivated students — see <a href="index.html" target=&ldquo;blank&rdquo;>Home</a></p>
 <div style="display: flex; justify-content: center; align-items: center; height: 8vh;"> <div style="width:10%;"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script></div> </div></div> <!-- <div id="layout-content"> -->
 <div id="footer-container">
 <div id="footer">
 <div id="footer-text">
-Last edited  on January 25<sup>th</sup> 2026  08:53PM (Time Zone: CST). </br>
+Last edited  on August 23<sup>rd</sup> 2026  06:13PM (Time Zone: CST). </br>
 </div> <!-- <div id="footer-text"> -->
 </div> <!-- <div id="footer"> -->
 </div> <!-- <div id="footer-container"> -->
