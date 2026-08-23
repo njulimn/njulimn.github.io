@@ -10,34 +10,29 @@ html {
 }
 
 body {
-font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: -0.01em; /* 轻微紧缩字间距，更现代 */
-    color: #1a1a1a;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14.5px;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+    color: #1e293b;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    min-height: auto; /* 移除固定最小高度，让内容决定高度 */
-    height: auto !important; /* 允许 body 扩展以容纳所有内容 */
+    min-height: auto;
+    height: auto !important;
     position: relative;
-    overflow-y: auto; /* 允许垂直滚动 */
-/* font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-	/* -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, */
-	 			 /* Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", */
-				 /* Arial, "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", */
-				 /* "Segoe UI Symbol"; */
-	font-weight: 400;
-	padding: 0;
-	margin: 0;
+    overflow-y: auto;
+    font-weight: 400;
 } 
 
-/* --- 2. 标题硬核化 --- */
-h1, h2, h3 {
-    font-family: "JetBrains Mono", monospace; /* 标题强制等宽 */
+/* --- 2. 标题规范化 --- */
+h1, h2, h3, h4 {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    color: #000;
-    margin-top: 1.8em;
+    letter-spacing: -0.025em;
+    color: #0f172a;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
 }
 
 div#main-container {
@@ -228,181 +223,53 @@ div#layout-menu {
 }
 
 #layout-menu a {
-	padding: 12px 20px;
-	margin: 0;
+	padding: 10px 18px;
+	margin: 4px 8px;
 	line-height: 1.5;
-	font-weight: 600;
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-size: 13.5px;
+	font-weight: 500;
+	color: #475569;
 	position: relative;
 	display: block;
-	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	text-decoration: none;
+	border-radius: 6px;
+	letter-spacing: 0.15px;
 	border-left: 3px solid transparent;
 	background: transparent;
-	letter-spacing: 0.3px;
-	border-radius: 0;
 	overflow: hidden;
 }
 
-/* 添加分隔线效果 - 使用 border-bottom 创建科技感分隔线 */
 #layout-menu a:not(:last-child) {
-	border-bottom: 1px solid rgba(123, 31, 162, 0.12);
-	margin-bottom: 0;
-	transition: border-bottom-color 0.3s ease;
-}
-
-/* 悬停时分隔线变亮 */
-#layout-menu a:hover:not(:last-child) {
-	border-bottom-color: rgba(123, 31, 162, 0.25);
-	box-shadow: 0 1px 0 rgba(0, 212, 255, 0.2);
-}
-
-/* 左侧发光边框 - 科技感渐变 */
-#layout-menu a::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 3px;
-	background: linear-gradient(180deg, #7B1FA2 0%, #00D4FF 50%, #7B1FA2 100%);
-	background-size: 100% 200%;
-	opacity: 0;
-	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-	box-shadow: 0 0 12px rgba(123, 31, 162, 0.8), 
-	            0 0 24px rgba(0, 212, 255, 0.6),
-	            inset 0 0 8px rgba(123, 31, 162, 0.3);
-	animation: gradientFlow 3s ease infinite;
-}
-
-@keyframes gradientFlow {
-	0%, 100% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 0% 100%;
-	}
-}
-
-/* 右侧扫描线效果 */
-#layout-menu a::after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	width: 0;
-	background: linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.3) 50%, transparent 100%);
-	transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-	pointer-events: none;
-}
-
-/* 背景光晕层 */
-#layout-menu a {
-	background-image: linear-gradient(90deg, transparent 0%, rgba(123, 31, 162, 0.05) 100%);
-	background-size: 0% 100%;
-	background-repeat: no-repeat;
-	transition: background-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #7B1FA2;
-	font-weight: 700;
-	background-size: 100% 100%;
-	border-left-color: #7B1FA2;
-	text-shadow: 0 0 12px rgba(123, 31, 162, 0.4),
-	             0 0 24px rgba(123, 31, 162, 0.2);
-	transform: translateX(2px);
-}
-
-/* 当前页面的边框和扫描线 */
-#layout-menu a.current::before {
-	opacity: 1;
-	box-shadow: 0 0 16px rgba(123, 31, 162, 1), 
-	            0 0 32px rgba(0, 212, 255, 0.8),
-	            inset 0 0 12px rgba(123, 31, 162, 0.5);
-}
-
-#layout-menu a.current::after {
-	width: 100%;
-	background: linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.2) 50%, transparent 100%);
-	animation: scanLine 2s ease-in-out infinite;
-}
-
-@keyframes scanLine {
-	0%, 100% {
-		opacity: 0.3;
-		transform: translateX(0);
-	}
-	50% {
-		opacity: 0.6;
-		transform: translateX(-10px);
-	}
+	border-bottom: none;
 }
 
 #layout-menu a:link, #layout-menu a:visited {
-	color: #1a202c;
+	color: #475569;
 	text-decoration: none;
 }
 
 #layout-menu a:hover {
+	color: #0f172a;
+	background: #f1f5f9;
+	border-left-color: #94a3b8;
+	font-weight: 600;
+	transform: translateX(3px);
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
 	color: #7B1FA2;
-	text-decoration: none;
-	background-size: 100% 100%;
-	border-left-color: #00D4FF;
-	transform: translateX(6px);
-	text-shadow: 0 0 10px rgba(123, 31, 162, 0.3),
-	             0 0 20px rgba(0, 212, 255, 0.2);
+	font-weight: 600;
+	background: rgba(123, 31, 162, 0.08);
+	border-left-color: #7B1FA2;
+	transform: none;
+	text-shadow: none;
 }
 
-/* 悬停时的边框和扫描线 */
-#layout-menu a:hover::before {
-	opacity: 0.8;
-	background: linear-gradient(180deg, #00D4FF 0%, #7B1FA2 50%, #00D4FF 100%);
-	box-shadow: 0 0 14px rgba(0, 212, 255, 0.9), 
-	            0 0 28px rgba(123, 31, 162, 0.7),
-	            inset 0 0 10px rgba(0, 212, 255, 0.4);
-}
-
-#layout-menu a:hover::after {
-	width: 100%;
-	background: linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.4) 50%, transparent 100%);
-}
-
-/* 点击效果 */
 #layout-menu a:active {
-	color: #5a1570;
-	transform: translateX(3px) scale(0.98);
-	background-size: 100% 100%;
-	border-left-color: #5a1570;
-	text-shadow: 0 0 16px rgba(123, 31, 162, 0.6),
-	             0 0 32px rgba(0, 212, 255, 0.4);
-}
-
-#layout-menu a:active::before {
-	opacity: 1;
-	background: linear-gradient(180deg, #5a1570 0%, #7B1FA2 50%, #5a1570 100%);
-	box-shadow: 0 0 20px rgba(123, 31, 162, 1), 
-	            0 0 40px rgba(0, 212, 255, 0.8),
-	            inset 0 0 16px rgba(123, 31, 162, 0.6);
-	animation: pulseGlow 0.3s ease;
-}
-
-@keyframes pulseGlow {
-	0%, 100% {
-		box-shadow: 0 0 20px rgba(123, 31, 162, 1), 
-		            0 0 40px rgba(0, 212, 255, 0.8),
-		            inset 0 0 16px rgba(123, 31, 162, 0.6);
-	}
-	50% {
-		box-shadow: 0 0 30px rgba(123, 31, 162, 1.2), 
-		            0 0 60px rgba(0, 212, 255, 1),
-		            inset 0 0 24px rgba(123, 31, 162, 0.8);
-	}
-}
-
-#layout-menu a:active::after {
-	width: 100%;
-	background: linear-gradient(90deg, transparent 0%, rgba(123, 31, 162, 0.5) 50%, transparent 100%);
+	color: #7B1FA2;
+	background: rgba(123, 31, 162, 0.14);
 }
 
 div#layout-content-container {
