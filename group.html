@@ -1,210 +1,386 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="icon" href="./images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Meng Li, Assistant Professor at Nanjing University. Research on on-device agents, foundation models, agent harness, and data systems.">
+<meta name="theme-color" content="#fdfcfb">
+<link rel="icon" type="image/png" href="images/lands-probee-v1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--- <title>Group</title> --->
-<title>Homepage of Meng</title>
-<!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-</script>
+<title>Group · Meng Li · Nanjing University</title>
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
+MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
 </script>
-<!-- End MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+<script src="site.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#layout-content">Skip to content</a>
 <div id="main-container">
-<div id="header-container">
+<header id="header-container">
 <div id="header">
-<div id="header-left">
-<div id="header-icon-container">
-<a href="index.html"><img src="./images/icon.png" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+<a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="images/lands-probee-v1.png" width="2048" height="768" alt="ProBee"></span><span class="brand-copy"><span class="brand-name" lang="zh">端智能研究小组</span><span class="brand-parent" lang="zh">LANDS（先进网络与数据科学研究组）</span></span></a>
+<span class="header-affiliation">Nanjing University</span>
+<button class="openbtn" type="button" aria-expanded="false" aria-controls="layout-menu">Menu <span aria-hidden="true">☰</span></button>
 </div>
-</div>
-<div id="header-center">
-<a href="index.html" style="text-decoration: none; color: white;">
-<div style="text-align: center; line-height: 1.2;">
-<div style="font-size: 22px; font-weight: bold; color: white;"><span style="font-family: 'Ma Shan Zheng', 'Long Cang', 'ZCOOL KuaiLe', 'STXingkai', 'KaiTi', 'STKaiti', 'FangSong', 'STFangsong', serif;">先进网络与数据科学研究组  </span>（LANDS）</div>
-</div>
-</a>
-</div>
-<div id="header-right">
-<div id="main">
-<button class="openbtn" onclick="openNav()">☰</button>
-</div>
-</div>
-</div>
-</div>
+</header>
 <div id="layout">
 <div id="layout-menu-container">
-<div id="layout-menu">
-<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<nav id="layout-menu" aria-label="Main navigation">
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="research.html">Research</a></div>
 <div class="menu-item"><a href="publication.html">Publications</a></div>
-<div class="menu-item"><a href="group.html" class="current">Group</a></div>
+<div class="menu-item"><a href="group.html" class="current" aria-current="page">Group</a></div>
 <div class="menu-item"><a href="service.html">Service</a></div>
 <div class="menu-item"><a href="teaching.html">Teaching</a></div>
-</div> <!-- <div id="layout-menu"> -->
-</div> <!-- <div id="layout-menu-container"> -->
+</nav>
+</div>
 <div id="layout-content-container">
-<div id="layout-content">
+<main id="layout-content" tabindex="-1">
 <div id="toptitle">
 <h1>Group</h1>
 </div>
-<p>
-<div style="margin: 1.5em 0; text-align: center;">
-<img src="images/groups/group2026.png" alt="LANDS Group Photo" style="max-width: 680px; width: 90%; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 1px solid rgb(229,231,235);" />
+<div class="group-page">
+<section class="group-intro" aria-label="About the group">
+  <div class="group-intro-copy">
+    <p><strong lang="zh">端智能研究小组</strong> · <span lang="zh">LANDS（先进网络与数据科学研究组） · 南京大学计算机学院</span></p>
+    <p lang="zh">欢迎联系组内同学，了解研究方向与组内科研生活。</p>
+    <nav class="group-section-links" aria-label="Group page sections">
+      <a href="#group-students">Current students</a>
+      <a href="#group-alumni">Alumni</a>
+      <a href="#group-outings">Group life</a>
+      <a href="index.html#recruitment-heading">Join us</a>
+    </nav>
+  </div>
+  <figure class="group-photo">
+    <a href="images/groups/group2026.png" aria-label="View full-size group photo"><img src="images/groups/group2026.png" width="1024" height="682" alt="LANDS research group photo" decoding="async"></a>
+  </figure>
+</section>
+
+<section id="group-students" class="group-section" aria-labelledby="group-students-title">
+  <header class="group-section-heading">
+    <h2 id="group-students-title">Current Students</h2>
+    <p id="student-note">* Co-supervised students.</p>
+  </header>
+<div class="student-directory student-directory-current" aria-label="Current students by intake year">
+<div class="student-columns" aria-hidden="true"><span>Student</span><span>Research</span><span>Internships</span></div>
+<section class="student-cohort" aria-labelledby="students-intake-2025">
+<header class="student-cohort-heading"><h3 id="students-intake-2025">2025 Intake</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Zhihan Jiang</span>
+<span class="student-degree">PhD</span>
 </div>
-</p>
-<h2>Students (*co-supervised)</h2>
-<p>
-<div class="row">
-<div  style="width: 15%;" >
-<p style="align-items: center;">2027</p>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>On-device agent memory · <a href="https://arxiv.org/abs/2607.14661">SmartRAG</a></span>
 </div>
-<div style="width: 80%;" >
-<p>Xuequ Huang (master*) &rarr; Intern@Huawei & Tencent, working on LLM agent</p>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Xiaomi</span><span class="student-internship-type">Current</span></p></div>
 </div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Xiaorui Cheng</span>
+<span class="student-degree">Master’s</span>
 </div>
-<div class="row">
-<div  style="width: 15%;" >
-<p style="align-items: center;">2026</p>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>On-device agents</span>
 </div>
-<div style="width: 80%;" >
-<p>Guoying Zhu (master*) &rarr; Intern@Honor Device &rarr; PhD@University of California, Riverside, working on LLM infra</p>
-<p>Wenqi Luo (master*) &rarr; PhD@Nanjing University, working on AI infra</p>
-<p>Zhipeng Chen (master*) &rarr; Research Intern@Alibaba DAMO Academy &rarr; Alibaba Cloud Infra, working on cloud data infra</p>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba DAMO Academy</span><span class="student-internship-type">Current</span></p></div>
 </div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Junjie Gu</span>
+<span class="student-degree">Master’s</span>
 </div>
-<div class="row">
-<div  style="width: 15%;" >
-<p style="align-items: center;">2025</p>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>On-device agents</span>
 </div>
-<div style="width: 80%;" >
-<p>Huayi Chai (master*) &rarr; Intern@Ant Group & Tencent &rarr; Tencent, working on learned index</p>
-<p>Yihuan Zhou (master*) &rarr; Intern@Alibaba &rarr; Alibaba, working on learned index</p>
-<p>Yiyun Zheng (undergraduate*) &rarr; Research Intern@Boston University, PhD@CUHK</p>
+<div class="student-internships student-field student-field-empty">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><span class="student-unlisted" aria-label="Not listed">—</span></div>
 </div>
+</li>
+</ul>
+</section>
+<section class="student-cohort" aria-labelledby="students-2027">
+<header class="student-cohort-heading"><h3 id="students-2027">2024 Intake</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Xuequ Huang<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
 </div>
-<div class="row">
-<div  style="width: 15%;" >
-<p style="align-items: center;">2024</p>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>LLM agents</span>
 </div>
-<div style="width: 85%;" >
-<p>Zhaochen Zhou (master*) &rarr; Intern@Alibaba &rarr; Alibaba Cloud Infra, working on learned index</p>
-<p>Feng Chen (master*) &rarr; Intern@Alibaba, working on LLM cluster stability</p>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Huawei &amp; Tencent</span></p></div>
 </div>
+</li>
+</ul>
+</section>
 </div>
-<div class="row">
-<div  style="width: 15%;" >
-<p style="align-items: center;">Before 2024</p>
+</section>
+
+<section id="group-alumni" class="group-section" aria-labelledby="group-alumni-title">
+  <header class="group-section-heading">
+    <h2 id="group-alumni-title">Alumni</h2>
+  </header>
+<div class="student-directory" aria-label="Alumni by graduation year">
+<div class="student-columns" aria-hidden="true"><span>Student</span><span>Research</span><span>Internships</span><span>Next Station</span></div>
+<section class="student-cohort" aria-labelledby="students-2026">
+<header class="student-cohort-heading"><h3 id="students-2026">Class of 2026</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Guoying Zhu<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
 </div>
-<div style="width: 85%;" >
-<p> Deyi Chen* &rarr; 杭州选调, working on learned index</p>
-<p> Rongbiao Xie (master*) &rarr; Alibaba PolarDB (阿里星), working on learned index</p>
-<p> Jun Yu (master*) &rarr; Alibaba, working on sketch</p>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>LLM infrastructure</span>
 </div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Honor Device</span></p></div>
 </div>
-</p>
-<h2>Outings</h2>
-<h3>2024</h3>
-<p>
-<div class="row">
-<div class="column">
-<img src="images/groups/outing/1.jpg" style="width:100%">
-<img src="images/groups/outing/5.jpg" style="width:100%">
-<img src="images/groups/outing/3.jpg" style="width:100%">
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>PhD · University of California, Riverside</span></p></div>
 </div>
-<div class="column">
-<img src="images/groups/outing/6.jpg" style="width:100%">
-<img src="images/groups/outing/17.jpg" style="width:100%">
-<img src="images/groups/outing/10.jpg" style="width:100%">
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Wenqi Luo<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
 </div>
-<div class="column">
-<img src="images/groups/outing/7.jpg" style="width:100%">
-<img src="images/groups/outing/19.jpg" style="width:100%">
-<img src="images/groups/outing/18.jpg" style="width:100%">
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>AI infrastructure</span>
 </div>
-<div class="column">
-<img src="images/groups/outing/14.jpg" style="width:100%">
-<img src="images/groups/outing/15.jpg" style="width:100%">
-<img src="images/groups/outing/13.jpg" style="width:100%">
+<div class="student-internships student-field student-field-empty">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><span class="student-unlisted" aria-label="Not listed">—</span></div>
 </div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>PhD · Nanjing University</span></p></div>
 </div>
-</p>
-<div style="display: flex; justify-content: center; align-items: center; height: 8vh;"> <div style="width:10%;"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script></div> </div></div> <!-- <div id="layout-content"> -->
-<div id="footer-container">
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Zhipeng Chen<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Cloud data infrastructure</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba DAMO Academy</span><span class="student-internship-type">Research internship</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba Cloud Infra</span></p></div>
+</div>
+</li>
+</ul>
+</section>
+<section class="student-cohort" aria-labelledby="students-2025">
+<header class="student-cohort-heading"><h3 id="students-2025">Class of 2025</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Huayi Chai<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Learned indexes</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Ant Group &amp; Tencent</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Tencent</span></p></div>
+</div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Yihuan Zhou<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Learned indexes</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Yiyun Zheng<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Undergraduate</span>
+</div>
+<div class="student-research">
+<span class="student-unlisted" aria-label="Research topic not listed">—</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Boston University</span><span class="student-internship-type">Research internship</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>PhD · CUHK</span></p></div>
+</div>
+</li>
+</ul>
+</section>
+<section class="student-cohort" aria-labelledby="students-2024">
+<header class="student-cohort-heading"><h3 id="students-2024">Class of 2024</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Zhaochen Zhou<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Learned indexes</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba Cloud Infra</span></p></div>
+</div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Feng Chen<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>LLM cluster stability</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba Cloud</span></p></div>
+</div>
+</li>
+</ul>
+</section>
+<section class="student-cohort" aria-labelledby="students-before-2024">
+<header class="student-cohort-heading"><h3 id="students-before-2024">Graduated before 2024</h3></header>
+<ul class="student-list">
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Deyi Chen<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Learned indexes</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>ByteDance</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>杭州选调</span></p></div>
+</div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Rongbiao Xie<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Learned indexes</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba PolarDB (阿里星)</span></p></div>
+</div>
+</li>
+<li class="student-entry">
+<div class="student-person">
+<span class="student-name">Jun Yu<sup title="Co-supervised" aria-label="co-supervised">*</sup></span>
+<span class="student-degree">Master’s</span>
+</div>
+<div class="student-research">
+<span class="student-mobile-label">Research</span><span>Sketch</span>
+</div>
+<div class="student-internships student-field">
+<span class="student-mobile-label">Internships</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+<div class="student-next-station student-field">
+<span class="student-mobile-label">Next Station</span>
+<div class="student-field-values"><p><span>Alibaba</span></p></div>
+</div>
+</li>
+</ul>
+</section>
+</div>
+</section>
+
+<section id="group-outings" class="group-section" aria-labelledby="group-outings-title">
+  <header class="group-section-heading">
+    <h2 id="group-outings-title">Group life</h2>
+  </header>
+  <h3 class="outing-year">Outings · 2024</h3>
+  <ul class="outing-gallery">
+    <li><a href="images/groups/outing/1.jpg" aria-label="View full-size outing photo 1"><img src="images/groups/outing/1.jpg" alt="Group outing in 2024, photo 1" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/5.jpg" aria-label="View full-size outing photo 2"><img src="images/groups/outing/5.jpg" alt="Group outing in 2024, photo 2" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/3.jpg" aria-label="View full-size outing photo 3"><img src="images/groups/outing/3.jpg" alt="Group outing in 2024, photo 3" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/6.jpg" aria-label="View full-size outing photo 4"><img src="images/groups/outing/6.jpg" alt="Group outing in 2024, photo 4" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/17.jpg" aria-label="View full-size outing photo 5"><img src="images/groups/outing/17.jpg" alt="Group outing in 2024, photo 5" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/10.jpg" aria-label="View full-size outing photo 6"><img src="images/groups/outing/10.jpg" alt="Group outing in 2024, photo 6" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/7.jpg" aria-label="View full-size outing photo 7"><img src="images/groups/outing/7.jpg" alt="Group outing in 2024, photo 7" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/19.jpg" aria-label="View full-size outing photo 8"><img src="images/groups/outing/19.jpg" alt="Group outing in 2024, photo 8" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/18.jpg" aria-label="View full-size outing photo 9"><img src="images/groups/outing/18.jpg" alt="Group outing in 2024, photo 9" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/14.jpg" aria-label="View full-size outing photo 10"><img src="images/groups/outing/14.jpg" alt="Group outing in 2024, photo 10" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/15.jpg" aria-label="View full-size outing photo 11"><img src="images/groups/outing/15.jpg" alt="Group outing in 2024, photo 11" loading="lazy" decoding="async"></a></li>
+    <li><a href="images/groups/outing/13.jpg" aria-label="View full-size outing photo 12"><img src="images/groups/outing/13.jpg" alt="Group outing in 2024, photo 12" loading="lazy" decoding="async"></a></li>
+  </ul>
+</section>
+</div>
+<div class="visitor-map"> <div style="width:10%;"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script></div> </div></main>
+<footer id="footer-container">
 <div id="footer">
+<a class="footer-name" href="index.html">Meng Li <span lang="zh">· 李猛</span></a>
+<p>School of Computer Science · Nanjing University</p>
 <div id="footer-text">
-Last edited  on August 23<sup>rd</sup> 2026  06:24PM (Time Zone: CST). </br>
-</div> <!-- <div id="footer-text"> -->
-</div> <!-- <div id="footer"> -->
-</div> <!-- <div id="footer-container"> -->
+Updated September 28<sup>th</sup> 2026
+</div>
+</div>
+</footer>
 </div> <!-- <div id="layout-content-container"> -->
-</div> <!--- <div id="layout"> --->
-</div> <!--- <div id="main-container"> --->
-<script>
-var menuIsOpen = false;
-function openNav() {
-    if (window.innerWidth <= 1200) {
-        var menu = document.getElementById("layout-menu");
-        var menuContainer = document.getElementById("layout-menu-container");
-        var content = document.getElementById("layout-content-container");
-        if (!menu || !content) return;
-        if (!menuIsOpen) {
-            menuIsOpen = true;
-            if (menuContainer) { menuContainer.style.width = "160px"; menuContainer.style.maxWidth = "160px"; }
-            menu.style.width = "160px"; menu.style.minWidth = "160px"; menu.style.maxWidth = "160px";
-            content.style.marginLeft = "160.8px"; content.style.width = "calc(100vw - 160.8px)";
-        } else {
-            menuIsOpen = false;
-            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-            menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
-            content.style.marginLeft = "0px"; content.style.width = "100vw";
-        }
-    }
-}
-function closeNav() {
-    if (window.innerWidth <= 1200) {
-        menuIsOpen = false;
-        var menu = document.getElementById("layout-menu");
-        var menuContainer = document.getElementById("layout-menu-container");
-        var content = document.getElementById("layout-content-container");
-        if (!menu || !content) return;
-        if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-        menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
-        content.style.marginLeft = "0px"; content.style.width = "100vw";
-    }
-}
-(function() {
-    function initMenu() {
-        if (window.innerWidth <= 1200) {
-            menuIsOpen = false;
-            var menu = document.getElementById("layout-menu");
-            var menuContainer = document.getElementById("layout-menu-container");
-            var content = document.getElementById("layout-content-container");
-            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-            if (menu) { menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0"; }
-            if (content) { content.style.marginLeft = "0px"; content.style.width = "100vw"; }
-        }
-    }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMenu);
-    else initMenu();
-    window.addEventListener('load', initMenu);
-    window.addEventListener('pageshow', function(e) { if (e.persisted) initMenu(); });
-})();
-</script>
+</div>
+</div>
 </body>
 </html>

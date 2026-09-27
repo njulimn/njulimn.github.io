@@ -1,262 +1,157 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="icon" href="./images/icon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Meng Li, Assistant Professor at Nanjing University. Research on on-device agents, foundation models, agent harness, and data systems.">
+<meta name="theme-color" content="#fdfcfb">
+<link rel="icon" type="image/png" href="images/lands-probee-v1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="main.css" type="text/css" />
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<!--- <title></title> --->
-<title>Homepage of Meng</title>
-<!-- MathJax -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-</script>
+<title>Research · Meng Li · Nanjing University</title>
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
+MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
 </script>
-<!-- End MathJax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+<script src="site.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#layout-content">Skip to content</a>
 <div id="main-container">
-<div id="header-container">
+<header id="header-container">
 <div id="header">
-<div id="header-left">
-<div id="header-icon-container">
-<a href="index.html"><img src="./images/icon.png" alt="" style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+<a class="brand" href="index.html"><span class="brand-mark"><img class="brand-logo" src="images/lands-probee-v1.png" width="2048" height="768" alt="ProBee"></span><span class="brand-copy"><span class="brand-name" lang="zh">端智能研究小组</span><span class="brand-parent" lang="zh">LANDS（先进网络与数据科学研究组）</span></span></a>
+<span class="header-affiliation">Nanjing University</span>
+<button class="openbtn" type="button" aria-expanded="false" aria-controls="layout-menu">Menu <span aria-hidden="true">☰</span></button>
 </div>
-</div>
-<div id="header-center">
-<a href="index.html" style="text-decoration: none; color: white;">
-<div style="text-align: center; line-height: 1.2;">
-<div style="font-size: 22px; font-weight: bold; color: white;"><span style="font-family: 'Ma Shan Zheng', 'Long Cang', 'ZCOOL KuaiLe', 'STXingkai', 'KaiTi', 'STKaiti', 'FangSong', 'STFangsong', serif;">先进网络与数据科学研究组  </span>（LANDS）</div>
-</div>
-</a>
-</div>
-<div id="header-right">
-<div id="main">
-<button class="openbtn" onclick="openNav()">☰</button>
-</div>
-</div>
-</div>
-</div>
+</header>
 <div id="layout">
 <div id="layout-menu-container">
-<div id="layout-menu">
-<div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+<nav id="layout-menu" aria-label="Main navigation">
 <div class="menu-item"><a href="index.html">Home</a></div>
-<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="research.html" class="current" aria-current="page">Research</a></div>
 <div class="menu-item"><a href="publication.html">Publications</a></div>
 <div class="menu-item"><a href="group.html">Group</a></div>
 <div class="menu-item"><a href="service.html">Service</a></div>
 <div class="menu-item"><a href="teaching.html">Teaching</a></div>
-</div> <!-- <div id="layout-menu"> -->
-</div> <!-- <div id="layout-menu-container"> -->
+</nav>
+</div>
 <div id="layout-content-container">
-<div id="layout-content">
-<h1>研究方向：端侧大模型系统</h1>
-<style>
-#layout-content h1, #toptitle h1, h1 {
-  font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', 'Songti SC', serif !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px !important;
-}
-</style>
-<div style="margin: 24px 0 32px 0; font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;">
+<main id="layout-content" tabindex="-1">
+<div class="research-page" lang="zh">
+  <header class="research-intro">
+    <h1>端侧智能体</h1>
+    <p class="research-motto">以真实应用，衡量研究价值。</p>
+  </header>
 
-  <!-- Architecture Flow Container -->
-  <div style="background: #ffffff; border: 1px solid #d1d5db; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);">
-    
-    <!-- Title Header -->
-    <div style="text-align: center; margin-bottom: 22px;">
-      <span style="font-size: 0.95em; font-weight: 700; color: #1f2937; letter-spacing: 1.5px; background: #f3f4f6; padding: 5px 16px; border-radius: 4px; font-family: 'Georgia', 'Times New Roman', serif;">Algorithm–System Co-Design</span>
-      <h3 style="margin: 10px 0 0 0; font-size: 1.3em; font-weight: 700; color: #111827; border-bottom: none; padding-bottom: 0; font-family: 'Georgia', 'Times New Roman', serif;">On-Device Agentic LLM System Framework</h3>
+  <section class="research-collaboration" aria-labelledby="collaboration-heading">
+    <div>
+      <h2 id="collaboration-heading">从研究原型到实际应用</h2>
+      <p>欢迎围绕真实设备与业务场景开展联合研究。</p>
     </div>
+  </section>
 
-    <!-- Layer I: Foundation Models (TOP) -->
-    <div style="display: flex; align-items: stretch; margin-bottom: 10px;">
-      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #1e3a8a; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">模型层</div>
-      <div style="background: #f5f7ff; border: 1px solid #c7d2fe; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
-        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
-          <span style="background: #1e3a8a; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer I</span>
-          <span style="font-weight: 700; font-size: 0.95em; color: #1e3a8a; font-family: 'Georgia', 'Times New Roman', serif;">Foundation Model Pre- &amp; Post-Training</span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 基模架构与 MoE</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">紧凑基模与稀疏专家路由</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 能力蒸馏与对齐</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">指令遵循与推理链蒸馏</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #dbeafe; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #1e3a8a; white-space: nowrap; font-family: 'Georgia', serif;">&#9670; 持续学习与 SFT</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">免重训持续微调 (<i>VaLoRA</i>)</div>
-          </div>
-        </div>
+  <section class="research-projects" aria-labelledby="projects-heading">
+    <header class="research-section-heading">
+      <h2 id="projects-heading">目前主要研究内容</h2>
+    </header>
+    <ol class="research-project-list">
+      <li class="research-project" id="project-device-native">
+        <div class="project-heading"><span class="project-index" aria-hidden="true">01</span><h3>端侧原生模型架构 <span class="project-alias" lang="en">Device-Native Model Architectures</span></h3></div>
+        <p>面向内存、带宽与能耗约束，协同设计端侧模型结构与推理方法。</p>
+      </li>
+      <li class="research-project" id="project-vibe-infra">
+        <div class="project-heading"><span class="project-index" aria-hidden="true">02</span><h3>训练与推理架构生成 <span class="project-alias" lang="en">Vibe Infra</span></h3></div>
+        <p>以硬件与模型为输入，由 Agent 自动构建专用训练和推理架构。</p>
+      </li>
+      <li class="research-project" id="project-agent-memory">
+        <div class="project-heading"><span class="project-index" aria-hidden="true">03</span><h3>端侧记忆 <span class="project-alias" lang="en">On-Device Memory</span></h3></div>
+        <p>构建可检索、可更新、可遗忘的本地记忆，支持智能体持续个性化。</p>
+      </li>
+      <li class="research-project" id="project-multi-agent">
+        <div class="project-heading"><span class="project-index" aria-hidden="true">04</span><h3>智能体规模化协同 <span class="project-alias" lang="en">Agent Scaling</span></h3></div>
+        <p>研究 Agent 规模扩展下的协作机制，让任务能力随规模提升，同时控制通信与调度开销。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="research-roadmap" aria-labelledby="roadmap-heading">
+    <header class="research-section-heading">
+      <h2 id="roadmap-heading">技术路线</h2>
+    </header>
+    <figure class="research-framework" aria-labelledby="roadmap-heading" aria-describedby="framework-caption">
+      <figcaption id="framework-caption" class="framework-summary">
+        <span>手机 · 边缘设备 · 机器人</span>
+        <span>共同关注：时延、内存、能耗与隐私</span>
+      </figcaption>
+      <div class="architecture-stack">
+        <section class="architecture-layer" aria-labelledby="foundation-layer">
+          <header class="layer-heading"><span class="layer-index" aria-hidden="true">01</span><h3 id="foundation-layer">模型训练与推理</h3></header>
+          <ul class="architecture-modules">
+            <li class="research-module">
+              <h4>端侧原生架构与 MoE</h4>
+              <a class="module-work" href="publication.html">SMoE <span>· ISCA ’26</span></a>
+            </li>
+            <li class="research-module"><h4>蒸馏与对齐</h4></li>
+            <li class="research-module">
+              <h4>持续学习</h4>
+              <a class="module-work" href="publication.html">VaLoRA <span>· EuroSys ’25</span></a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="architecture-connection" aria-label="模型能力支撑系统"><span aria-hidden="true">→</span></div>
+
+        <section class="architecture-layer architecture-runtime" aria-labelledby="runtime-layer">
+          <header class="layer-heading"><span class="layer-index" aria-hidden="true">02</span><h3 id="runtime-layer">端侧 Agent 系统</h3></header>
+          <ul class="architecture-modules">
+            <li class="research-module"><h4>运行时与调度</h4></li>
+            <li class="research-module">
+              <h4>检索与记忆</h4>
+              <a class="module-work" href="https://arxiv.org/abs/2607.14661">SmartRAG <span>· Preprint</span></a>
+            </li>
+            <li class="research-module">
+              <h4>工具访问</h4>
+              <a class="module-work" href="publication.html">MCP Gateway <span>· ATC ’26</span></a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="architecture-connection" aria-label="系统能力支撑应用"><span aria-hidden="true">→</span></div>
+
+        <section class="architecture-layer" aria-labelledby="application-layer">
+          <header class="layer-heading"><span class="layer-index" aria-hidden="true">03</span><h3 id="application-layer">协同与应用</h3></header>
+          <ul class="architecture-modules">
+            <li class="research-module">
+              <h4>智能体规模化协同</h4>
+              <a class="module-work" href="publication.html">Quadruped Coordination <span>· CoRL ’26</span></a>
+            </li>
+            <li class="research-module">
+              <h4>情境感知与情感交互</h4>
+              <a class="module-work" href="publication.html">MobileOC <span>· UbiComp SRC ’26</span></a>
+            </li>
+            <li class="research-module"><h4>直播与实时交互</h4></li>
+          </ul>
+        </section>
       </div>
-    </div>
-
-    <!-- Connector Arrow -->
-    <div style="text-align: center; color: #9ca3af; font-size: 0.85em; margin: -2px 0 6px 0; font-weight: 700;">&#9660; &#9650;</div>
-
-    <!-- Layer II: Agent Harness -->
-    <div style="display: flex; align-items: stretch; margin-bottom: 10px;">
-      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #166534; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">系统层</div>
-      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
-        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
-          <span style="background: #166534; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer II</span>
-          <span style="font-weight: 700; font-size: 0.95em; color: #14532d; font-family: 'Georgia', 'Times New Roman', serif;">On-Device Agent Harness</span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; Runtime 调度</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">低延迟规划与显存协同</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; 图 RAG &amp; 记忆</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">终身时序记忆 (<i>SmartRAG</i>)</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #dcfce7; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.84em; color: #166534; white-space: nowrap; font-family: 'Georgia', serif;">&#9656; 工具 &amp; 扩展</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">云边协同工具调用底座</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Connector Arrow -->
-    <div style="text-align: center; color: #9ca3af; font-size: 0.85em; margin: -2px 0 6px 0; font-weight: 700;">&#9660; &#9650;</div>
-
-    <!-- Layer III: Applications (BOTTOM) -->
-    <div style="display: flex; align-items: stretch;">
-      <div style="writing-mode: vertical-lr; text-orientation: mixed; display: flex; align-items: center; justify-content: center; background: #581c87; color: #ffffff; font-weight: 700; font-size: 0.78em; letter-spacing: 3px; padding: 8px 6px; border-radius: 10px 0 0 10px; font-family: 'Georgia', serif; min-width: 28px;">应用层</div>
-      <div style="background: #faf5ff; border: 1px solid #e9d5ff; border-left: none; border-radius: 0 10px 10px 0; padding: 14px 16px; flex: 1;">
-        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
-          <span style="background: #581c87; color: #ffffff; font-size: 0.7em; font-weight: 700; padding: 3px 10px; border-radius: 4px; font-family: 'Georgia', serif;">Layer III</span>
-          <span style="font-weight: 700; font-size: 0.95em; color: #581c87; font-family: 'Georgia', 'Times New Roman', serif;">Domain-Specific Agent Applications</span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 情感计算 Agent</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">隐私共情交互 (<i>MobileOC</i>)</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 直播交互 Agent</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">实时流式助播与工具协同</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #f3e8ff; border-radius: 6px; padding: 10px 12px; text-align: center;">
-            <div style="font-weight: 700; font-size: 0.86em; color: #6b21a8; white-space: nowrap; font-family: 'Georgia', serif;">&#9671; 具身智能 Agent</div>
-            <div style="font-size: 0.76em; color: #6b7280; margin-top: 4px; font-family: 'Georgia', serif;">感知-规划-控制闭环</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+    </figure>
+  </section>
 </div>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px 0 10px 0; font-family: 'Georgia', 'Times New Roman', 'Noto Serif SC', serif;">
-
-  <!-- Column 1: Layer I -->
-  <div>
-    <h3 style="font-size: 0.95em; color: #1e3a8a; border-bottom: 2px solid #c7d2fe; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer I. 基模预训练与后训练</h3>
-    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
-      <li><b>Edge Backbone & MoE</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>SMoE</i>, ISCA'26; APNet'26</span></li>
-      <li><b>Distillation & Alignment</b></li>
-      <li><b>Continual Post-training</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>VaLoRA</i>, EuroSys'25; TMC'26</span></li>
-    </ul>
-  </div>
-
-  <!-- Column 2: Layer II -->
-  <div>
-    <h3 style="font-size: 0.95em; color: #166534; border-bottom: 2px solid #bbf7d0; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer II. 端侧 Agent Harness</h3>
-    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
-      <li><b>Agent Runtime Engine</b></li>
-      <li><b>Native Graph RAG</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>SmartRAG</i>, arXiv'26</span></li>
-      <li><b>Tool Scaling</b><br><span style="color: #6b7280; font-size: 0.9em;">APNet'26</span></li>
-    </ul>
-  </div>
-
-  <!-- Column 3: Layer III -->
-  <div>
-    <h3 style="font-size: 0.95em; color: #581c87; border-bottom: 2px solid #e9d5ff; padding-bottom: 6px; margin-top: 0; font-family: 'Georgia', serif;">Layer III. 领域智能体应用</h3>
-    <ul style="padding-left: 18px; margin: 8px 0 0 0; list-style: disc; font-size: 0.88em; color: #374151; line-height: 1.7;">
-      <li><b>Affective Computing</b><br><span style="color: #6b7280; font-size: 0.9em;"><i>MobileOC</i>, UbiComp'26</span></li>
-      <li><b>Live-Streaming Agent</b></li>
-      <li><b>Embodied AI Agent</b></li>
-    </ul>
-  </div>
-
-</div>
-<p>For full papers, see <a href="publication.html" target=&ldquo;blank&rdquo;>Publications</a>. We recruit motivated students — see <a href="index.html" target=&ldquo;blank&rdquo;>Home</a></p>
-<div style="display: flex; justify-content: center; align-items: center; height: 8vh;"> <div style="width:10%;"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script></div> </div></div> <!-- <div id="layout-content"> -->
-<div id="footer-container">
+<div class="visitor-map"> <div style="width:10%;"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=EIJ3JO6Pc1dgJalsnc_IcmLbLdDoPEFqew-PZXrfYQI"></script></div> </div></main>
+<footer id="footer-container">
 <div id="footer">
+<a class="footer-name" href="index.html">Meng Li <span lang="zh">· 李猛</span></a>
+<p>School of Computer Science · Nanjing University</p>
 <div id="footer-text">
-Last edited  on August 23<sup>rd</sup> 2026  06:24PM (Time Zone: CST). </br>
-</div> <!-- <div id="footer-text"> -->
-</div> <!-- <div id="footer"> -->
-</div> <!-- <div id="footer-container"> -->
+Updated September 28<sup>th</sup> 2026
+</div>
+</div>
+</footer>
 </div> <!-- <div id="layout-content-container"> -->
-</div> <!--- <div id="layout"> --->
-</div> <!--- <div id="main-container"> --->
-<script>
-var menuIsOpen = false;
-function openNav() {
-    if (window.innerWidth <= 1200) {
-        var menu = document.getElementById("layout-menu");
-        var menuContainer = document.getElementById("layout-menu-container");
-        var content = document.getElementById("layout-content-container");
-        if (!menu || !content) return;
-        if (!menuIsOpen) {
-            menuIsOpen = true;
-            if (menuContainer) { menuContainer.style.width = "160px"; menuContainer.style.maxWidth = "160px"; }
-            menu.style.width = "160px"; menu.style.minWidth = "160px"; menu.style.maxWidth = "160px";
-            content.style.marginLeft = "160.8px"; content.style.width = "calc(100vw - 160.8px)";
-        } else {
-            menuIsOpen = false;
-            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-            menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
-            content.style.marginLeft = "0px"; content.style.width = "100vw";
-        }
-    }
-}
-function closeNav() {
-    if (window.innerWidth <= 1200) {
-        menuIsOpen = false;
-        var menu = document.getElementById("layout-menu");
-        var menuContainer = document.getElementById("layout-menu-container");
-        var content = document.getElementById("layout-content-container");
-        if (!menu || !content) return;
-        if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-        menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0";
-        content.style.marginLeft = "0px"; content.style.width = "100vw";
-    }
-}
-(function() {
-    function initMenu() {
-        if (window.innerWidth <= 1200) {
-            menuIsOpen = false;
-            var menu = document.getElementById("layout-menu");
-            var menuContainer = document.getElementById("layout-menu-container");
-            var content = document.getElementById("layout-content-container");
-            if (menuContainer) { menuContainer.style.width = "0"; menuContainer.style.maxWidth = "0"; }
-            if (menu) { menu.style.width = "0"; menu.style.minWidth = "0"; menu.style.maxWidth = "0"; }
-            if (content) { content.style.marginLeft = "0px"; content.style.width = "100vw"; }
-        }
-    }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMenu);
-    else initMenu();
-    window.addEventListener('load', initMenu);
-    window.addEventListener('pageshow', function(e) { if (e.persisted) initMenu(); });
-})();
-</script>
+</div>
+</div>
 </body>
 </html>
